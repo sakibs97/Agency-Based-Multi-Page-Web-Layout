@@ -14,11 +14,20 @@ export default {
       backgroundImage: {
         banbg: "URL(./src/assets/banner/watermark.png)",
         coursebg: "URL(./src/assets/course/watermarkC.png)",
+        map: "URL(./src/assets/map/map.png)",
       },
       colors:{       
         'main':'#1A1A1A',
         'ptag':'#6B6161',
+        
       },
+      gradientColorStops:{
+        'startC':'#FE651B',
+        'endC':'#FFAA52',
+
+      },
+      
+
     },
     container: {
       center: true,

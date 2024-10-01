@@ -94,35 +94,35 @@ const Navbar = () => {
                 <nav className=" flex justify-between bg-white px-5 rounded-full">
                     <ul className="font-pop font-normal text-[16px] text-main leading-[90px] flex items-center">
                         <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center">Home</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE651B]" />
+                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Home</span>
+                            <IoIosArrowDown className="group-hover:text-startC" />
                         </li>
-                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center lg:mx-3">
+                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
                             About
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center">Services</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE651B]" />
+                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Services</span>
+                            <IoIosArrowDown className="group-hover:text-startC" />
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center">Team</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE651B]" />
+                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Team</span>
+                            <IoIosArrowDown className="group-hover:text-startC" />
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center">Pages</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE651B]" />
+                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Pages</span>
+                            <IoIosArrowDown className="group-hover:text-startC" />
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center">News</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE651B]" />
+                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">News</span>
+                            <IoIosArrowDown className="group-hover:text-startC" />
                         </li>
-                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-[#FE651B] after:to-[#FFAA52] duration-300 flex items-center lg:mx-3">
+                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
                             Contact
                         </li>
                     </ul>
                     <div className="flex items-center">
                         <div className="flex items-center">
-                            <div className="p-4 border-[2px] border-[#FE651B] rounded-full">
+                            <div className="p-4 border-[2px] border-startC rounded-full">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.868864 9.56136C0.769539 5.1602 4.09554 0.669511 9.3807 0.131469C14.3907 -0.378255 18.9386 3.23183 19.6175 8.20575C19.9528 10.6649 19.4207 12.923 18.0137 14.9619C17.8123 15.2542 17.8424 15.4067 18.0793 15.6424C19.9875 17.5379 21.8828 19.4471 23.7837 21.3508C24.0124 21.5801 24.2165 21.8185 24.2548 22.1601C24.3186 22.7238 24.068 23.2134 23.5887 23.4463C23.1084 23.6802 22.5681 23.577 22.1352 23.144C20.2326 21.243 18.3281 19.343 16.4418 17.4255C16.1548 17.1332 15.9771 17.0949 15.6208 17.3388C9.86092 21.2923 1.95232 17.8257 0.950875 10.9252C0.884355 10.4703 0.876154 10.0172 0.868864 9.56136ZM3.29366 9.52574C3.2891 13.4026 6.39732 16.5477 10.2427 16.5568C14.1437 16.5669 17.2765 13.4574 17.2811 9.57141C17.2857 5.68911 14.182 2.54763 10.3348 2.53941C6.43924 2.53119 3.2973 5.64891 3.29366 9.52574Z" fill="url(#paint0_linear_310_7155)" />
                                     <defs>
@@ -133,7 +133,7 @@ const Navbar = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <div className="p-4 border-[2px] border-[#FE651B] rounded-full mx-5">
+                            <div className="p-4 border-[2px] border-startC rounded-full mx-5">
                                 <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19.7472 6.21264C19.5903 5.81551 19.2308 5.78119 17.464 5.78119H15.9959V5.15364C15.9959 4.17798 15.8541 3.49649 15.5099 2.79539C14.8872 1.52556 13.8443 0.638157 12.4926 0.226322C11.8345 0.0302096 10.8524 -0.053138 10.255 0.0351124C8.59958 0.290058 7.18715 1.31474 6.46828 2.77578C6.11896 3.49159 5.97721 4.17798 5.97721 5.15364V5.7861H4.50403C2.73722 5.7861 2.37778 5.82042 2.22084 6.23225C2.13984 6.4921 1.38047 12.0764 1.05647 14.4837C0.772972 16.5821 0.509722 18.5628 0.317347 20.0532C-0.0167771 22.6223 -0.00665214 22.6615 0.00347284 22.7057V22.7106C0.0490353 22.8773 0.499597 23.3136 0.636284 23.4411L1.2286 24H20.7091L21.1495 23.6225C21.3469 23.4509 22 22.8675 22 22.5782C22 22.3821 19.7877 6.32541 19.7472 6.21264ZM20.4003 22.2056C20.3952 22.2399 20.3547 22.3429 20.2838 22.4164L20.1826 22.5243H1.79053L1.52728 22.2497L2.56509 14.7435C2.92959 12.0715 3.25359 9.74266 3.44597 8.35026C3.53203 7.74231 3.57253 7.43344 3.59278 7.28145C4.27622 7.27655 7.26309 7.27165 10.979 7.27165H18.3702L18.3803 7.32558C18.4613 7.7178 20.3648 21.7692 20.4003 22.2056ZM7.50102 5.7861V5.22718C7.50102 4.84966 7.55165 4.32997 7.60734 4.08973C7.90602 2.86403 8.92358 1.86876 10.1943 1.55008C10.7258 1.4226 11.5966 1.46673 12.1281 1.65304H12.1332C12.6901 1.83444 13.1457 2.12861 13.5659 2.57967C14.2443 3.29547 14.4721 3.93774 14.4721 5.12422V5.7861H7.50102Z" fill="url(#paint0_linear_310_7160)" />
                                     <defs>
@@ -145,7 +145,7 @@ const Navbar = () => {
                                 </svg>
                             </div>
                         </div>
-                        <button className="flex group items-center text-[#fff] py-[15px] px-[25px] bg-gradient-to-r from-[#FE651B] to-[#FFAA52] rounded-full drop-shadow-lg my-3 ml-3">
+                        <button className="flex group items-center text-[#fff] py-[15px] px-[25px] bg-gradient-to-r from-startC to-endC rounded-full drop-shadow-lg my-3 ml-3">
                             <span className="font-dmSans font-normal text-[18px]">Free Quote</span>
                             <IoIosArrowRoundForward className="group-hover:-rotate-45 w-8 h-8 duration-500" />
                         </button>

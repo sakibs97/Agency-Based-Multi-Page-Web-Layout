@@ -1,7 +1,10 @@
 import './App.css';
 import AboutOurCompany from './components/AboutOurCompany';
 import Banner from './components/Banner';
+import Brands from './components/Brands';
+import ClientSay from './components/ClientSay';
 import Course from './components/Course';
+import Faq from './components/Faq';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import OurServices from './components/OurServices';
@@ -19,6 +22,9 @@ function App() {
       <AboutOurCompany />
       <OurServices />
       <TeamMember />
+      <Brands />
+      <ClientSay />
+      <Faq />
     </>
   )
 }

@@ -9,7 +9,7 @@ const AboutOurCompany = () => {
                     <img src={learn} alt="" className='  ' />
                 </div>
                 <div className="w-[49%]">
-                    <p className='font-dmSans font-medium text-[20px] text-transparent bg-gradient-to-r from-[#FE651B] to-[#FFAA52] bg-clip-text'>
+                    <p className='font-dmSans font-medium text-[20px] text-transparent bg-gradient-to-r from-startC to-endC bg-clip-text'>
                         About Our Company
                     </p>
                     <h2 className='font-nuni font-bold text-[46px] text-main leading-[56px]'>
@@ -50,7 +50,7 @@ const AboutOurCompany = () => {
                             </span>
                             02. 24/7 Days super Support.
                         </h5>
-                        <button className='font-dmSans font-normal text-[18px] text-white leading-[30px] py-[15px] px-[33px] rounded-full bg-gradient-to-r from-[#FE651B] to-[#FFAA52] mt-10'>Read More</button>
+                        <button className='font-dmSans font-normal text-[18px] text-white leading-[30px] py-[15px] px-[33px] rounded-full bg-gradient-to-r from-startC to-endC mt-10'>Read More</button>
                     </div>
                 </div>
             </div>

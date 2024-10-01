@@ -16,15 +16,15 @@ const Header = () => {
                         </select>
                     </div>
                     <div className="flex justify-between w-[50%] ">
-                        <FaFacebookF className="h-4 cursor-pointer text-[#95ACFF] hover:text-[#FE651B] duration-500" />
+                        <FaFacebookF className="h-4 cursor-pointer text-[#95ACFF] hover:text-startC duration-500" />
                         <div className="after:bg-[#708FFF] relative after:w-[2px] after:h-[18px] after:absolute after:left-[-100%] after:bottom-[0px] after:block">
-                            <FaLinkedinIn className="h-4 cursor-pointer text-[#95ACFF] hover:text-[#FE651B] duration-500" />
+                            <FaLinkedinIn className="h-4 cursor-pointer text-[#95ACFF] hover:text-startC duration-500" />
                         </div>
                         <div className="after:bg-[#708FFF] relative after:w-[2px] after:h-[18px] after:absolute after:left-[-100%] after:bottom-[0px] after:block">
-                            <FaTwitter className="h-4 cursor-pointer text-[#95ACFF] hover:text-[#FE651B] duration-500" />
+                            <FaTwitter className="h-4 cursor-pointer text-[#95ACFF] hover:text-startC duration-500" />
                         </div>
                         <div className="after:bg-[#708FFF] relative after:w-[2px] after:h-[18px] after:absolute after:left-[-100%] after:bottom-[0px] after:block">
-                            <FaYoutube className="h-4 cursor-pointer text-[#95ACFF] hover:text-[#FE651B] duration-500" />
+                            <FaYoutube className="h-4 cursor-pointer text-[#95ACFF] hover:text-startC duration-500" />
                         </div>
                     </div>
                 </div>
