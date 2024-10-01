@@ -12,7 +12,12 @@ export default {
         'nuni': ['Nunito', 'sans-serif'],
       },
       backgroundImage: {
-        banbg: "URL(./src/assets/banner/Image1.png)",
+        banbg: "URL(./src/assets/banner/watermark.png)",
+        coursebg: "URL(./src/assets/course/watermarkC.png)",
+      },
+      colors:{       
+        'main':'#1A1A1A',
+        'ptag':'#6B6161',
       },
     },
     container: {
@@ -23,6 +28,15 @@ export default {
         lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
+      },
+    },
+    animation: {
+      fadeOut: 'fadeOut 2s ease forwards',
+    },
+    keyframes: {
+      fadeOut: {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' },
       },
     },
   },
