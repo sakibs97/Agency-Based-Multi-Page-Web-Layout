@@ -1,91 +1,142 @@
-import faq from '../assets/faq/faq.png'
-import icon1 from '../assets/faq/Icon.png'
-import icon2 from '../assets/faq/Icon2.png'
-import icon3 from '../assets/faq/Icon3.png'
-
+import { useState } from 'react';
+import faq from '../assets/faq/faq.png';
+import icon1 from '../assets/faq/Icon.png';
+import icon2 from '../assets/faq/Icon2.png';
+import icon3 from '../assets/faq/Icon3.png';
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Faq = () => {
+    let [openAccordion, setOpenAccordion] = useState(null);
+    const [activeTab, setActiveTab] = useState('General-Questions');
+
+
+    const toggleAccordion = (index) => {
+        setOpenAccordion(openAccordion === index ? null : index);
+    };
+
     return (
-        <section className='my-20'>
-            <div className="container flex justify-between">
-                <div className="w-[49%]">
+        <section className="my-20">
+            <div className="container">
+                <div className="w-[50%]">
                     <h4 className='font-dmSans font-medium text-[20px] text-transparent bg-gradient-to-r from-startC to-endC bg-clip-text'>Common Questions</h4>
                     <h3 className='font-nuni font-bold text-[46px] text-main leading-[56px]'>Frequently Asked Questions</h3>
-                    <div className="flex justify-between pt-10">
-                        <div className="">
-                            <div className="bg-[#F4F4FF] flex items-center py-[11px] px-[30px] rounded-full">
-                                <img src={icon1} alt="" className='bg-[#3661FC] rounded-xl' />
-                                <h5 className='font-dmSans font-medium text-[20px] text-main pl-[15px]'>General Questions</h5>
-                            </div>
-                            <div className="bg-[#F4F4FF] flex items-center py-[11px] px-[30px] rounded-full my-[20px]">
-                                <img src={icon2} alt="" className='bg-black rounded-full' />
-                                <h5 className='font-dmSans font-medium text-[20px] text-main pl-[15px]'>Community</h5>
-                            </div>
-                            <div className="bg-[#F4F4FF] flex items-center py-[11px] px-[30px] rounded-full">
-                                <img src={icon3} alt="" className='bg-[#3661FC] rounded-xl' />
-                                <h5 className='font-dmSans font-medium text-[20px] text-main pl-[15px]'>Support</h5>
-                            </div>
-                        </div>
-                        <img src={faq} alt="faq" />
-                    </div>
                 </div>
-                <div className="w-[49%]">
-                    <div className="">
-                        <div id="accordion-collapse" data-accordion="collapse">
-                            <h2 id="accordion-collapse-heading-1">
-                                <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-                                    <span>What is Flowbite?</span>
-                                    <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1">
-                                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                                    <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-                                    <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                <div className="flex justify-between">
+                    <div className="w-[49%]">
+                        <div className="flex justify-between pt-10">
+                            <div id="default-tab" role="tablist">
+                                <div
+                                    className={`flex items-center py-[10px] px-[30px] rounded-full ${activeTab === 'General-Questions' ? 'bg-[#3661FC] text-white' : 'bg-[#F4F4FF] text-main'
+                                        }`}
+                                    id="General-Questions"
+                                    onClick={() => setActiveTab('General-Questions')}
+                                    role="tab"
+                                    aria-controls="General-Questions"
+                                    aria-selected={activeTab === 'General-Questions'}
+                                >
+                                    <img src={icon1} alt="" className="bg-[#3661FC] rounded-xl p-1" />
+                                    <h5 className="font-dmSans font-medium text-[20px] pl-[15px]">General Questions</h5>
                                 </div>
-                            </div>
-                            <h2 id="accordion-collapse-heading-2">
-                                <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                                    <span>Is there a Figma file available?</span>
-                                    <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-                                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                                    <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-                                    <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
-                                </div>
-                            </div>
-                            <h2 id="accordion-collapse-heading-3">
-                                <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-                                    <span>What are the differences between Flowbite and Tailwind UI?</span>
-                                    <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-3" className="hidden" aria-labelledby="accordion-collapse-heading-3">
-                                <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                                    <p className="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-                                    <p className="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-                                    <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                                    <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                                        <li><a href="https://flowbite.com/pro/" className="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-                                        <li><a href="https://tailwindui.com/" rel="nofollow" className="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
+                                <div
+                                    className={`my-5 flex items-center py-[10px] px-[30px] rounded-full ${activeTab === 'Community' ? 'bg-[#3661FC] text-white' : 'bg-[#F4F4FF] text-main'
+                                        }`}
+                                    id="Community"
+                                    onClick={() => setActiveTab('Community')}
+                                    role="tab"
+                                    aria-controls="Community"
+                                    aria-selected={activeTab === 'Community'}
+                                >
+                                    <img src={icon2} alt="" className='bg-[#3661FC] rounded-xl p-1' />
+                                    <h5 className="font-dmSans font-medium text-[20px] pl-[15px]">Community</h5>
+                                </div>
+
+                                <div
+                                    className={`flex items-center py-[10px] px-[30px] rounded-full ${activeTab === 'Support' ? 'bg-[#3661FC] text-white' : 'bg-[#F4F4FF] text-main'
+                                        }`}
+                                    id="Support"
+                                    onClick={() => setActiveTab('Support')}
+                                    role="tab"
+                                    aria-controls="Support"
+                                    aria-selected={activeTab === 'Support'}
+                                >
+                                    <img src={icon3} alt="" className="bg-[#3661FC] rounded-xl p-1" />
+                                    <h5 className="font-dmSans font-medium text-[20px] pl-[15px]">Support</h5>
+                                </div>
+                            </div>
+
+                            <img src={faq} alt="faq" />
+                        </div>
+                    </div>
+                    <div className="w-[49%] space-y-4">
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 1 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(1)}
+                            >
+                                Is it Full Digital Marketing Agency?
+                                <span className="text-[#3661FC]">{openAccordion === 1 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 1 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis ad quasi voluptate velit nisi quaerat consequatur, id quia tenetur.
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 2 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(2)}
+                            >
+                                How to Create my Project in Agency?
+                                <span className="text-blue-500">{openAccordion === 2 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 2 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    It is a long established fact that a reader will be distracted by the readable content of
+                                    page when looking at its layout. The point of using Lorem Ipsuim is that it has as more
+                                    less or randomised words which don&#39;t look even slightly believable. If you are going to
+                                    use a passage of Lorem Ipsum, you need to be sure..
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 3 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(3)}
+                            >
+                                How to Work in Process of Digital Agency?
+                                <span className="text-blue-500">{openAccordion === 3 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 3 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a facilis vel, ipsum similique omnis delectus quasi rem ut totam reiciendis, veniam aliquid laudantium. Voluptatem debitis sequi nam eius ex.
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 4 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(4)}
+                            >
+                                How to Join Your Referral Program?
+                                <span className="text-blue-500">{openAccordion === 4 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 4 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas, eius doloremque quod rem officia officiis magnam earum dolore facere odio harum laborum deserunt minima?
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Faq
+export default Faq;
