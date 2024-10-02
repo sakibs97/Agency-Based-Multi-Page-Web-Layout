@@ -24,9 +24,7 @@ export default {
       gradientColorStops:{
         'startC':'#FE651B',
         'endC':'#FFAA52',
-
-      },
-      
+      },      
 
     },
     container: {
