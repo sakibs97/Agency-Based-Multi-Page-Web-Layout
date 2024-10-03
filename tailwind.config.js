@@ -15,6 +15,7 @@ export default {
         banbg: "URL(./src/assets/banner/watermark.png)",
         coursebg: "URL(./src/assets/course/watermarkC.png)",
         map: "URL(./src/assets/map/map.png)",
+        footer: "URL(./src/assets/footer.png)",
       },
       colors:{       
         'main':'#1A1A1A',
@@ -32,7 +33,7 @@ export default {
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
-        lg: '4rem',
+        lg: '3rem',
         xl: '5rem',
         '2xl': '6rem',
       },

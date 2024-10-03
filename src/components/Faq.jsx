@@ -26,7 +26,7 @@ const Faq = () => {
                         <div className="flex justify-between pt-10">
                             <div id="default-tab" role="tablist">
                                 <div
-                                    className={`flex items-center py-[10px] px-[30px] rounded-full ${activeTab === 'General-Questions' ? 'bg-[#3661FC] text-white' : 'bg-[#F4F4FF] text-main'
+                                    className={`flex items-center py-[10px] px-[30px] rounded-full cursor-pointer ${activeTab === 'General-Questions' ? 'bg-[#3661FC] text-white duration-300' : 'bg-[#F4F4FF] text-main hover:bg-[#3661FC] hover:text-white duration-300'
                                         }`}
                                     id="General-Questions"
                                     onClick={() => setActiveTab('General-Questions')}
@@ -39,7 +39,7 @@ const Faq = () => {
                                 </div>
 
                                 <div
-                                    className={`my-5 flex items-center py-[10px] px-[30px] rounded-full ${activeTab === 'Community' ? 'bg-[#3661FC] text-white' : 'bg-[#F4F4FF] text-main'
+                                    className={`my-5 flex items-center py-[10px] px-[30px] rounded-full cursor-pointer ${activeTab === 'Community' ? 'bg-[#3661FC] text-white duration-300' : 'bg-[#F4F4FF] text-main hover:bg-[#3661FC] hover:text-white duration-300'
                                         }`}
                                     id="Community"
                                     onClick={() => setActiveTab('Community')}
@@ -52,7 +52,7 @@ const Faq = () => {
                                 </div>
 
                                 <div
-                                    className={`flex items-center py-[10px] px-[30px] rounded-full ${activeTab === 'Support' ? 'bg-[#3661FC] text-white' : 'bg-[#F4F4FF] text-main'
+                                    className={`flex items-center py-[10px] px-[30px] rounded-full cursor-pointer ${activeTab === 'Support' ? 'bg-[#3661FC] text-white duration-300' : 'bg-[#F4F4FF] text-main hover:bg-[#3661FC] hover:text-white duration-300'
                                         }`}
                                     id="Support"
                                     onClick={() => setActiveTab('Support')}
@@ -68,7 +68,7 @@ const Faq = () => {
                             <img src={faq} alt="faq" />
                         </div>
                     </div>
-                    <div className="w-[49%] space-y-4">
+                    <div className={`w-[49%] space-y-4 ${activeTab === 'General-Questions' ? 'block' : 'hidden'}`}>
                         <div className="border rounded-xl shadow-lg">
                             <button
                                 className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 1 ? 'text-[#3661FC]' : 'text-main'
@@ -129,6 +129,133 @@ const Faq = () => {
                             {openAccordion === 4 && (
                                 <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas, eius doloremque quod rem officia officiis magnam earum dolore facere odio harum laborum deserunt minima?
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className={`w-[49%] space-y-4 ${activeTab === 'Community' ? 'block' : 'hidden'}`}>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 1 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(1)}
+                            >
+                                Lorem ipsum dolor sit amet, consectetur?
+                                <span className="text-[#3661FC]">{openAccordion === 1 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 1 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis ad quasi voluptate velit nisi quaerat consequatur, id quia tenetur.
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 2 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(2)}
+                            >
+                                Lorem ipsum dolor sit amet, consectetur?
+                                <span className="text-blue-500">{openAccordion === 2 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 2 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    It is a long established fact that a reader will be distracted by the readable content of
+                                    page when looking at its layout. The point of using Lorem Ipsuim is that it has as more
+                                    less or randomised words which don&#39;t look even slightly believable. If you are going to
+                                    use a passage of Lorem Ipsum, you need to be sure..
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 3 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(3)}
+                            >
+                                Lorem ipsum dolor sit amet, consectetur hhhhhh?
+                                <span className="text-blue-500">{openAccordion === 3 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 3 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a facilis vel, ipsum similique omnis delectus quasi rem ut totam reiciendis, veniam aliquid laudantium. Voluptatem debitis sequi nam eius ex.
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 4 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(4)}
+                            >
+                                Lorem ipsum dolor sit amet, consectetur?
+                                <span className="text-blue-500">{openAccordion === 4 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 4 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quas, eius doloremque quod rem officia officiis magnam earum dolore facere odio harum laborum deserunt minima?
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className={`w-[49%] space-y-4 ${activeTab === 'Support' ? 'block' : 'hidden'}`}>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 1 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(1)}
+                            >
+                                Lorem ipsum dolor sit amet?
+                                <span className="text-[#3661FC]">{openAccordion === 1 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 1 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde odit ea iure, quae, veritatis deleniti porro voluptatibus cupiditate reprehenderit laboriosam suscipit repellat eius eligendi quos veniam! Ullam, sunt quo?
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 2 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(2)}
+                            >
+                                Lorem ipsum dolor sit amet?
+                                <span className="text-blue-500">{openAccordion === 2 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 2 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam, officia quam itaque et, sed amet dolores veritatis tenetur eveniet ab saepe illum iure a.
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 3 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(3)}
+                            >
+                                Lorem ipsum dolor sit amet?
+                                <span className="text-blue-500">{openAccordion === 3 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 3 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a facilis vel, ipsum similique omnis delectus quasi rem ut totam reiciendis, veniam aliquid laudantium. Voluptatem debitis sequi nam eius ex.
+                                </div>
+                            )}
+                        </div>
+                        <div className="border rounded-xl shadow-lg">
+                            <button
+                                className={`flex justify-between w-full p-5 font-nuni font-bold text-left rounded-xl focus:outline-none ${openAccordion === 4 ? 'text-[#3661FC]' : 'text-main'
+                                    }`}
+                                onClick={() => toggleAccordion(4)}
+                            >
+                                Lorem ipsum dolor sit amet?
+                                <span className="text-blue-500">{openAccordion === 4 ? <FaMinus className='w-[23px] h-[23px]' /> : <FaPlus className='w-[23px] h-[23px]' />}</span>
+                            </button>
+                            {openAccordion === 4 && (
+                                <div className="p-5 font-dmSans font-normal text-[16px] text-ptag leading-[26px]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sunt distinctio similique perferendis magni architecto hic ipsum pariatur voluptate a suscipit, neque libero! Quod quaerat, reprehenderit eligendi aperiam cumque facere.
                                 </div>
                             )}
                         </div>
