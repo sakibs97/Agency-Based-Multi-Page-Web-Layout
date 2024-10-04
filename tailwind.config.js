@@ -15,16 +15,19 @@ export default {
         banbg: "URL(./src/assets/banner/watermark.png)",
         coursebg: "URL(./src/assets/course/watermarkC.png)",
         map: "URL(./src/assets/map/map.png)",
-        footer: "URL(./src/assets/footer.png)",
+        footer: "URL(./src/assets/footer/footer.png)",
       },
       colors:{       
         'main':'#1A1A1A',
-        'ptag':'#6B6161',
-        
+        'ptag':'#6B6161',        
       },
       gradientColorStops:{
         'startC':'#FE651B',
         'endC':'#FFAA52',
+      },
+      boxShadow: {
+        'custom': '2px 6px 8px rgba(54,97,252, 0.5)', 
+        'custom-shadow': '0 8px 16px rgba(54,97,252, 0.7)',
       },      
 
     },
