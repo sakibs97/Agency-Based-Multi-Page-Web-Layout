@@ -1,6 +1,7 @@
 import icon from "../assets/navbar/icon.png"
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -93,10 +94,12 @@ const Navbar = () => {
             <div className="container">
                 <nav className=" flex justify-between bg-white px-5 rounded-full">
                     <ul className="font-pop font-normal text-[16px] text-main leading-[90px] flex items-center">
-                        <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Home</span>
-                            <IoIosArrowDown className="group-hover:text-startC" />
-                        </li>
+                        <Link to='/'>
+                            <li className="relative flex items-center group lg:mx-3">
+                                <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Home</span>
+                                <IoIosArrowDown className="group-hover:text-startC" />
+                            </li>
+                        </Link>
                         <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
                             About
                         </li>

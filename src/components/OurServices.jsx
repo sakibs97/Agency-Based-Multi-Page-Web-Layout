@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import temp from '../assets/ourServices/temp.png'
 import Readreusable from './reuseable/Readreusable'
 
@@ -48,7 +48,6 @@ const OurServices = () => {
                             </div>
                         </>
                     ))}
-
                 </div>
             </div>
         </section>

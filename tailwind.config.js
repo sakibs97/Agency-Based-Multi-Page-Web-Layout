@@ -28,7 +28,7 @@ export default {
       boxShadow: {
         'custom': '2px 6px 8px rgba(54,97,252, 0.5)', 
         'custom-shadow': '0 8px 16px rgba(54,97,252, 0.7)',
-      },      
+      },     
 
     },
     container: {
@@ -51,5 +51,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }
