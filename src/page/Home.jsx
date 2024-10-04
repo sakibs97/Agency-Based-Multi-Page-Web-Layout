@@ -12,13 +12,13 @@ import Sponser from '../components/Sponser';
 const Home = () => {
     return (
         <>
-            {/* <Banner />
+            <Banner />
             <Course />
             <AboutOurCompany />
             <OurServices />
             <TeamMember />
             <Brands />
-            <ClientSay /> */}
+            <ClientSay />
             <Faq />
             <OurBlog />
             <Sponser />
