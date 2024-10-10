@@ -83,14 +83,14 @@ const OurBlog = () => {
                     {/* Blog 3 */}
                     <div className="relative group z-50 my-5">
                         <img src={blog3} alt="" className='rounded-3xl bg-[#CCCCCC] w-full h-auto object-cover' />
-                        <div className="text-white text-center py-[6px] pr-[16px] pl-[60px] bg-gradient-to-l from-startC to-endC rounded-3xl absolute bottom-0 left-[10%] md:left-[13%]">
+                        <div className="text-white text-center py-[6px] pr-[16px] pl-[60px] bg-gradient-to-l from-startC to-endC rounded-3xl absolute bottom-0 left-[13%]">
                             <p className='font-dmSans font-normal text-[16px] leading-[26px]'>Digital Agency</p>
                         </div>
                         <div className="text-white text-center p-[23px] bg-gradient-to-r from-startC to-endC rounded-3xl absolute bottom-0">
                             <p className='font-dmSans font-normal text-[16px] leading-[26px]'>09 Dec</p>
                             <span className='font-dmSans font-medium text-[20px]'>2022</span>
                         </div>
-                        <div className="absolute bottom-[-35%] w-full bg-[#FFFFFF] rounded-3xl -z-10 pt-[100px] pl-[20px] md:pl-[30px] pr-[20px] md:pr-[48px] pb-[20px]">
+                        <div className="absolute w-full bg-[#FFFFFF] rounded-3xl -z-10 pt-[100px] pl-[20px] md:pl-[30px] pr-[20px] md:pr-[48px] pb-[20px]">
                             <div className="grid grid-cols-3">
                                 <div className="flex items-center">
                                     <CiUser className='text-[#3661FC]' />

@@ -7,7 +7,7 @@ const Course = () => {
     return (
         <section className='mt-20'>
             <div className="container flex justify-between">
-                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] -skew-y-6 group z-50 cursor-pointer">
+                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC bg-opacity-0 rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] -skew-y-6 group z-50 cursor-pointer">
                     <div className="skew-y-[6deg] relative">
                         <div className="">
                             <img src={graphics} alt="graphics" className='p-[26px] bg-[#3661FC] group-hover:bg-gradient-to-r from-startC to-endC rounded-full mx-auto' />

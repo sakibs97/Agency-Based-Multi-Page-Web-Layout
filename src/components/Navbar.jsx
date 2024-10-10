@@ -91,33 +91,35 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className="container">
+            <div className="container z-50">
                 <nav className=" flex justify-between bg-white px-5 rounded-full">
                     <ul className="font-pop font-normal text-[16px] text-main leading-[90px] flex items-center">
                         <Link to='/'>
                             <li className="relative flex items-center group lg:mx-3">
                                 <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Home</span>
-                                <IoIosArrowDown className="group-hover:text-startC" />
+                                <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                             </li>
                         </Link>
                         <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
                             About
                         </li>
-                        <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Services</span>
-                            <IoIosArrowDown className="group-hover:text-startC" />
-                        </li>
+                        <Link to='/services'>
+                            <li className="relative flex items-center group lg:mx-3">
+                                <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Services</span>
+                                <IoIosArrowDown className="group-hover:text-[#FE681E]" />
+                            </li>
+                        </Link>
                         <li className="relative flex items-center group lg:mx-3">
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Team</span>
-                            <IoIosArrowDown className="group-hover:text-startC" />
+                            <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Pages</span>
-                            <IoIosArrowDown className="group-hover:text-startC" />
+                            <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">News</span>
-                            <IoIosArrowDown className="group-hover:text-startC" />
+                            <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                         </li>
                         <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
                             Contact

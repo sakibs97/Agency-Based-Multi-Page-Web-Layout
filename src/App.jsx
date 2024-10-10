@@ -2,11 +2,13 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './App.css';
 import RootLayout from './components/layout/RootLayout';
 import Home from './page/Home';
+import Service from './page/Service';
 
 let router = createBrowserRouter(createRoutesFromElements(
   <>
     <Route element={<RootLayout />}>
       <Route index element={<Home />}></Route>
+      <Route path='/services' element={<Service />}></Route>
     </Route>
   </>
 ))

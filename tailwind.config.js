@@ -16,6 +16,12 @@ export default {
         coursebg: "URL(./src/assets/course/watermarkC.png)",
         map: "URL(./src/assets/map/map.png)",
         footer: "URL(./src/assets/footer/footer.png)",
+        service_banner: "URL(./src/assets/Services/service.png)",
+        service_after_banner: "URL(./src/assets/Services/banner.png)",
+        service_work_banner: "URL(./src/assets/Services/work/banner.png)",
+        service_we_work_banner: "URL(./src/assets/Services/work/workban.png)",
+        service_support_banner: "URL(./src/assets/Services/work/support/banner.jpg)",
+        service_support_banner_after: "URL(./src/assets/Services/work/support/after.png",
       },
       colors:{       
         'main':'#1A1A1A',
