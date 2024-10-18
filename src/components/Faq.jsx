@@ -7,7 +7,7 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Faq = () => {
     let [openAccordion, setOpenAccordion] = useState(null);
-    const [activeTab, setActiveTab] = useState('General-Questions');
+    let [activeTab, setActiveTab] = useState('General-Questions');
 
 
     const toggleAccordion = (index) => {

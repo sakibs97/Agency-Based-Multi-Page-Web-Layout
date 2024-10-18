@@ -2,6 +2,7 @@
 import OurServices from "../components/OurServices"
 import ServiceBanner from "../components/ServiceBanner"
 import ServiceProjects from "../components/ServiceProjects"
+import ServiceTestimonial from "../components/ServiceTestimonial"
 import WeWork from "../components/WeWork"
 
 
@@ -12,6 +13,7 @@ const Service = () => {
             <OurServices />
             <WeWork />
             <ServiceProjects />
+            <ServiceTestimonial />
         </>
     )
 }
