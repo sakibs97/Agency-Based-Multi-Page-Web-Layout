@@ -103,12 +103,14 @@ const Navbar = () => {
                         <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
                             About
                         </li>
-                        <Link to='/services'>
-                            <li className="relative flex items-center group lg:mx-3">
+                        <li>
+                            <Link to='/services'
+                                className="relative flex items-center group lg:mx-3"
+                            >
                                 <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Services</span>
                                 <IoIosArrowDown className="group-hover:text-[#FE681E]" />
-                            </li>
-                        </Link>
+                            </Link>
+                        </li>
                         <li className="relative flex items-center group lg:mx-3">
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Team</span>
                             <IoIosArrowDown className="group-hover:text-[#FE681E]" />
@@ -121,8 +123,12 @@ const Navbar = () => {
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">News</span>
                             <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                         </li>
-                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
-                            Contact
+                        <li>
+                            <Link to='/Contact'
+                                className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3"
+                            >
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                     <div className="flex items-center">

@@ -22,7 +22,9 @@ export default {
         service_work_banner: "URL(./src/assets/Services/work/banner.png)",
         service_we_work_banner: "URL(./src/assets/Services/work/workban.png)",
         service_support_banner: "URL(./src/assets/Services/work/support/banner.jpg)",
-        service_support_banner_after: "URL(./src/assets/Services/work/support/after.png",
+        service_support_banner_after: "URL(./src/assets/Services/work/support/after.png)",
+        not_found_banner: "URL(./src/assets/404/404_page.png)",
+        contact_banner: "URL(./src/assets/contact/contact.jpg)",
       },
       colors:{       
         'main':'#1A1A1A',
