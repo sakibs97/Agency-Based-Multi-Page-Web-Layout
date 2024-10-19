@@ -1,5 +1,11 @@
 import { FaStar } from "react-icons/fa";
-import client from "../assets/Services/client-photo.png"
+import client from "../assets/Services/client/client-one.png"
+import client2 from "../assets/Services/client/client-two.jpg"
+import client3 from "../assets/Services/client/client-three.jpg"
+import client4 from "../assets/Services/client/client-four.png"
+import client5 from "../assets/Services/client/client-five.jpg"
+import client6 from "../assets/Services/client/client-six.png"
+import client7 from "../assets/Services/client/client-seven.jpg"
 import { useState } from "react";
 import { FaMinus } from "react-icons/fa";
 
@@ -20,7 +26,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'first-client'}
                             onClick={() => setActiveTab('first-client')}
                         >
-                            <img src={client} alt="" className="" />
+                            <img src={client} alt="" className="rounded-3xl" />
                         </div>
                         <div className={`cursor-pointer absolute bottom-[70%] right-[50%] translate-x-[-80%] w-full ${activeTab == 'two-client' ? "bg-gradient-to-r from-startC to-endC pb-2 rounded-[30px]" : "bg-none"}`}
                             id="two-client"
@@ -29,7 +35,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'two-client'}
                             onClick={() => setActiveTab('two-client')}
                         >
-                            <img src={client} alt="" />
+                            <img src={client2} alt="" className="rounded-3xl" />
                         </div>
                         <div className={`cursor-pointer absolute top-[70%] right-[50%] translate-x-[-80%] w-full ${activeTab == 'three-client' ? "bg-gradient-to-r from-startC to-endC pb-2 rounded-[30px]" : "bg-none"}`}
                             id="three-client"
@@ -38,7 +44,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'three-client'}
                             onClick={() => setActiveTab('three-client')}
                         >
-                            <img src={client} alt="" />
+                            <img src={client3} alt="" className="rounded-3xl" />
                         </div>
                         <div className={`cursor-pointer absolute top-[50%] right-0 translate-y-[80%] w-full ${activeTab == 'four-client' ? "bg-gradient-to-r from-startC to-endC pb-2 rounded-[30px]" : "bg-none"}`}
                             id="four-client"
@@ -47,7 +53,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'four-client'}
                             onClick={() => setActiveTab('four-client')}
                         >
-                            <img src={client} alt="" />
+                            <img src={client4} alt="" className="rounded-3xl" />
                         </div>
                         <div className={`cursor-pointer absolute top-[70%] right-[-50%] translate-x-[80%] w-full ${activeTab == 'five-client' ? "bg-gradient-to-r from-startC to-endC pb-2 rounded-[30px]" : "bg-none"}`}
                             id="five-client"
@@ -56,7 +62,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'five-client'}
                             onClick={() => setActiveTab('five-client')}
                         >
-                            <img src={client} alt="" />
+                            <img src={client5} alt="" className="rounded-3xl" />
                         </div>
                         <div className={`cursor-pointer absolute bottom-[70%] right-[-50%] translate-x-[80%] w-full ${activeTab == 'six-client' ? "bg-gradient-to-r from-startC to-endC pb-2 rounded-[30px]" : "bg-none"}`}
                             id="six-client"
@@ -65,7 +71,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'six-client'}
                             onClick={() => setActiveTab('six-client')}
                         >
-                            <img src={client} alt="" />
+                            <img src={client6} alt="" className="rounded-3xl" />
                         </div>
                         <div className={`cursor-pointer absolute bottom-[50%] right-0 translate-y-[-80%] w-full ${activeTab == 'seven-client' ? "bg-gradient-to-r from-startC to-endC pb-2 rounded-[30px]" : "bg-none"}`}
                             id="seven-client"
@@ -74,7 +80,7 @@ const ServiceTestimonial = () => {
                             aria-selected={activeTab === 'seven-client'}
                             onClick={() => setActiveTab('seven-client')}
                         >
-                            <img src={client} alt="" />
+                            <img src={client7} alt="" className="rounded-3xl" />
                         </div>
 
                     </div>
@@ -308,7 +314,7 @@ const ServiceTestimonial = () => {
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea eius aspernatur et culpa, est inventore itaque ipsa in voluptatibus, voluptas reiciendis quas error quo autem perspiciatis, iste mollitia iusto fuga. Placeat rem numquam unde aperiam voluptate omnis laudantium veniam quaerat quibusdam esse magnam expedita sed vel dignissimos, inventore distinctio, totam in quos quasi. Nam, totam!
                         </p>
                         <div className="">
-                            <h6 className="font-nuni font-bold text-[25px] text-main">Alison Breker</h6>
+                            <h6 className="font-nuni font-bold text-[25px] text-main">Alisson Becker</h6>
                             <p className="font-dmSans font-normal text-[16px] leading-[26px] text-[#6B6161]">Designer</p>
                         </div>
                     </div>

@@ -12,8 +12,9 @@ export default {
         'nuni': ['Nunito', 'sans-serif'],
       },
       backgroundImage: {
-        banbg: "URL(./src/assets/banner/watermark.png)",
-        coursebg: "URL(./src/assets/course/watermarkC.png)",
+        ban_bg: "URL(./src/assets/banner/watermark.png)",
+        ban_after_bg: "URL(./src/assets/banner/Shape.png)",
+        course_bg: "URL(./src/assets/course/watermarkC.png)",
         map: "URL(./src/assets/map/map.png)",
         footer: "URL(./src/assets/footer/footer.png)",
         service_banner: "URL(./src/assets/Services/service.png)",

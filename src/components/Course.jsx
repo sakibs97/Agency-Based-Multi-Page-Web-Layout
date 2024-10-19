@@ -7,7 +7,7 @@ const Course = () => {
     return (
         <section className='mt-20'>
             <div className="container flex justify-between">
-                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC bg-opacity-0 rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] -skew-y-6 group z-50 cursor-pointer">
+                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl -skew-y-6 z-50 cursor-pointer group">
                     <div className="skew-y-[6deg] relative">
                         <div className="">
                             <img src={graphics} alt="graphics" className='p-[26px] bg-[#3661FC] group-hover:bg-gradient-to-r from-startC to-endC rounded-full mx-auto' />
@@ -19,9 +19,9 @@ const Course = () => {
                             have suffered alteration.
                         </p>
                     </div>
-                    <div className="absolute bg-white h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
+                    <div className="absolute bg-white group-hover:bg-[#F4F4FF] h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
                 </div>
-                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] -skew-y-6 group z-50 cursor-pointer">
+                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl -skew-y-6 group z-50 cursor-pointer">
                     <div className="skew-y-[6deg] relative">
                         <div className="">
                             <img src={web} alt="web" className='p-[26px] bg-[#3661FC] group-hover:bg-gradient-to-r from-startC to-endC rounded-full mx-auto' />
@@ -33,9 +33,9 @@ const Course = () => {
                             have suffered alteration.
                         </p>
                     </div>
-                    <div className="absolute bg-white h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
+                    <div className="absolute bg-white group-hover:bg-[#F4F4FF] h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
                 </div>
-                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] -skew-y-6 group z-50 cursor-pointer">
+                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl -skew-y-6 group z-50 cursor-pointer">
                     <div className="skew-y-[6deg] relative">
                         <div className="">
                             <img src={digital} alt="digital" className='p-[26px] bg-[#3661FC] group-hover:bg-gradient-to-r from-startC to-endC rounded-full mx-auto' />
@@ -47,9 +47,9 @@ const Course = () => {
                             have suffered alteration.
                         </p>
                     </div>
-                    <div className="absolute bg-white h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
+                    <div className="absolute bg-white group-hover:bg-[#F4F4FF] h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
                 </div>
-                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] -skew-y-6 group z-50 cursor-pointer">
+                <div className="relative text-center px-[25px] pt-[70px] pb-[35px] bg-gradient-to-r from-startC to-endC rounded-3xl -skew-y-6 group z-50 cursor-pointer">
                     <div className="skew-y-[6deg] relative">
                         <div className="">
                             <img src={app} alt="app" className='p-[26px] bg-[#3661FC] group-hover:bg-gradient-to-r from-startC to-endC rounded-full mx-auto' />
@@ -61,7 +61,7 @@ const Course = () => {
                             have suffered alteration.
                         </p>
                     </div>
-                    <div className="absolute bg-white h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
+                    <div className="absolute bg-white group-hover:bg-[#F4F4FF] h-full w-full top-0 left-0 rounded-3xl -z-10 group-hover:skew-y-[-6deg] group-hover:skew-x-[6deg] group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300"></div>
                 </div>
             </div>
 

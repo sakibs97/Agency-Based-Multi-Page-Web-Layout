@@ -1,5 +1,11 @@
-import team from "../assets/team-member/team.png";
-import hoverteam from "../assets/team-member/hoverteam.png";
+import growth from "../assets/team-member/growth.jpg";
+import customer from "../assets/team-member/customer.jpg";
+import marketing from "../assets/team-member/marketing.jpg";
+import startup from "../assets/team-member/startup.jpg";
+import growthTwo from "../assets/team-member/growth-two.jpg";
+import customerTwo from "../assets/team-member/customer-two.jpg";
+import marketingTwo from "../assets/team-member/marketing-two.jpg";
+import startupTwo from "../assets/team-member/startup-two.jpg";
 import Slider from "react-slick";
 import { BsPlusLg } from "react-icons/bs";
 
@@ -81,14 +87,14 @@ const PortfolioSlider = () => {
             <div className="mt-8">
                 <Slider {...settings}>
                     <div className="relative group cursor-pointer mx-2">
-                        <img src={team} alt="" className="group-hover:opacity-0 " />
+                        <img src={growth} alt="" className="group-hover:opacity-0 rounded-3xl" />
                         <div className="absolute -top-0 left-0 z-50">
-                            <img src={hoverteam} alt="" className="rounded-b-xl relative rounded-t-[20px]" />
+                            <img src={growthTwo} alt="" className="relative rounded-3xl opacity-0 group-hover:opacity-100" />
                             <div className="hidden group-hover:block">
                                 <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px]">
                                     <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Monthly Design Magazine</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Print, Books</p>
+                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Corporate Startup Agency</h4>
+                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Roadmap, Growth</p>
                                     </div>
                                     <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
                                         <BsPlusLg className="text-white w-[22px] h-[22px]" />
@@ -98,9 +104,9 @@ const PortfolioSlider = () => {
                         </div>
                     </div>
                     <div className="relative group cursor-pointer mx-2">
-                        <img src={team} alt="" className="group-hover:opacity-0 " />
+                        <img src={customer} alt="customer" className="rounded-3xl group-hover:opacity-0" />
                         <div className="absolute -top-0 left-0 z-50">
-                            <img src={hoverteam} alt="" className="rounded-b-xl relative rounded-t-[20px]" />
+                            <img src={customerTwo} alt="customerTow" className="rounded-3xl relative group-hover:opacity-100 opacity-0" />
                             <div className="hidden group-hover:block">
                                 <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px] ">
                                     <div className="">
@@ -115,14 +121,14 @@ const PortfolioSlider = () => {
                         </div>
                     </div>
                     <div className="relative group cursor-pointer mx-2">
-                        <img src={team} alt="" className="group-hover:opacity-0 " />
+                        <img src={startup} alt="startup" className="rounded-3xl group-hover:opacity-0" />
                         <div className="absolute -top-0 left-0 z-50">
-                            <img src={hoverteam} alt="" className="rounded-b-xl relative rounded-t-[20px]" />
+                            <img src={startupTwo} alt="" className="rounded-3xl relative opacity-0 group-hover:opacity-100" />
                             <div className="hidden group-hover:block">
                                 <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px] ">
                                     <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Monthly Design Magazine</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Print, Books</p>
+                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Agency Growth Check</h4>
+                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Marketing, Growth</p>
                                     </div>
                                     <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
                                         <BsPlusLg className="text-white w-[22px] h-[22px]" />
@@ -132,14 +138,14 @@ const PortfolioSlider = () => {
                         </div>
                     </div>
                     <div className="relative group cursor-pointer mx-2">
-                        <img src={team} alt="" className="group-hover:opacity-0 " />
+                        <img src={marketing} alt="marketing" className="rounded-3xl group-hover:opacity-0 " />
                         <div className="absolute -top-0 left-0 z-50">
-                            <img src={hoverteam} alt="" className="rounded-b-xl relative rounded-t-[20px]" />
+                            <img src={marketingTwo} alt="" className="rounded-3xl relative opacity-0 group-hover:opacity-100" />
                             <div className="hidden group-hover:block">
                                 <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px] ">
                                     <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Monthly Design Magazine</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Print, Books</p>
+                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Customer Product Analytic</h4>
+                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Analytics, Growth</p>
                                     </div>
                                     <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
                                         <BsPlusLg className="text-white w-[22px] h-[22px]" />
