@@ -25,6 +25,7 @@ export default {
         service_support_banner_after: "URL(./src/assets/Services/work/support/after.png)",
         not_found_banner: "URL(./src/assets/404/404_page.png)",
         contact_banner: "URL(./src/assets/contact/contact.jpg)",
+        service_details_banner: "URL(./src/assets/services/service-details/service-banner.png)",
       },
       colors:{       
         'main':'#1A1A1A',

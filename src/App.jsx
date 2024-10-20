@@ -5,12 +5,14 @@ import Home from './page/Home';
 import Service from './page/Service';
 import ErrorPage from './page/ErrorPage';
 import Contact from './page/Contact';
+import SeoServices from './page/SeoServices';
 
 let router = createBrowserRouter(createRoutesFromElements(
   <>
     <Route element={<RootLayout />}>
       <Route index element={<Home />}></Route>
       <Route path='/services' element={<Service />}></Route>
+      <Route path='/seo-service-details' element={<SeoServices />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='*' element={<ErrorPage />}></Route>
     </Route>

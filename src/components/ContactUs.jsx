@@ -1,12 +1,13 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import help from "../assets/contact/help.png"
 
 const ContactUs = () => {
     return (
-        <section className="my-28">
-            <div className="container">
-                <div className="bg-[#F4F4FF] py-[50px] rounded-xl flex items-center">
+        <section className="">
+            <div className="container my-28">
+                <div className="bg-[#F4F4FF] rounded-xl flex items-center">
                     <div className="w-[50%]">
                         <div className="px-[60px]">
                             <h4 className="font-nuni font-bold text-[46px] text-main leading-[56px]"
@@ -49,18 +50,18 @@ const ContactUs = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[50%] bg-[#3661FC] py-[50px] px-[60px] rounded-l-3xl text-white">
+                    <div className="w-[50%] rounded-r-2xl rounded-tl-2xl bg-[#3661FC] py-[50px] px-[60px]  text-white">
                         <h4 className="font-nuni font-bold text-[46px] leading-[46px]"
                         >Need Any Help?</h4>
                         <p className="font-dmSans font-normal text-[16px] leading-[26px] pt-[10px]">Call us or message and we&apos;ll respond as soon as possible</p>
-                        <div className="">
+                        <div className="mt-[42px] flex items-center justify-between">
                             <div className="flex">
                                 <div className="relative">
                                     <div className="py-[18.95px] pl-[19.74px] pr-[18.94px] bg-gradient-to-r from-startC to-endC rounded-full">
-                                        <FaPhoneAlt className="w-[23px] h-[22px]" />
+                                        <FaPhoneAlt className="w-[21.32px] h-[22.11px]" />
                                     </div>
                                 </div>
-                                <div className="">
+                                <div className="ml-[25px]">
                                     <h6 className="font-nuni font-bold text-[25px] leading-[25px] pb-[12px]">Phone</h6>
                                     <p className="font-dmSans font-normal text-[16px] leading-[26px]">
                                         +(323) 9847 3847 383</p>
@@ -68,10 +69,41 @@ const ContactUs = () => {
                                         +(434) 5466 5467 443</p>
                                 </div>
                             </div>
+                            <div className="flex">
+                                <div className="relative">
+                                    <div className="py-[22.11px] pl-[18.95px] pr-[19.13px] bg-gradient-to-r from-startC to-endC rounded-full">
+                                        <MdEmail className="w-[21.93px] h-[15.79px]" />
+                                    </div>
+                                </div>
+                                <div className="ml-[25px]">
+                                    <h6 className="font-nuni font-bold text-[25px] leading-[25px] pb-[12px]">Email</h6>
+                                    <p className="font-dmSans font-normal text-[16px] leading-[26px]">
+                                        infoyour@gmail.com</p>
+                                    <p className="font-dmSans font-normal text-[16px] leading-[26px]">
+                                        domaininfo@gmail.com</p>
+                                </div>
+                            </div>
                         </div>
-
+                        <div className="flex mt-[46px] mb-[58px]">
+                            <div className="relative">
+                                <div className="pt-[19px] pb-[18.89px] pl-[22px] pr-[21.42px] bg-gradient-to-r from-startC to-endC rounded-full">
+                                    <FaLocationDot className="w-[16.58px] h-[22.11px]" />
+                                </div>
+                            </div>
+                            <div className="ml-[25px]">
+                                <h6 className="font-nuni font-bold text-[25px] leading-[25px] pb-[12px]">Location</h6>
+                                <p className="font-dmSans font-normal text-[16px] leading-[26px] w-[354px]">
+                                    4517 Washington Ave. 32 King Street, Melbourne Manchester, Road USA</p>
+                            </div>
+                        </div>
+                        <div className="bg-white pt-[35px] pr-[41.48px] pb-[35.18px] pl-[42px] rounded-3xl">
+                            <img src={help} alt="help" />
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div className="">
+                <iframe className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.717423219907!2d144.9576373!3d-37.8200873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4d8e6ee4eb%3A0x5b58e1c3675f8a5b!2s32%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sbd!4v1729425074532!5m2!1sen!2sbd" width="600" height="450" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     )

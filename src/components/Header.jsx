@@ -3,7 +3,7 @@ import usa from "../assets/header/flag-usa.png"
 
 const Header = () => {
     return (
-        <section className="absolute w-full z-20 top-0 start-0 bg-[#3661FC] rounded-b-full py-2 font-normal text-[14px] text-white">
+        <section className="absolute w-full z-20 top-0 start-0 bg-[#3661FC] rounded-b-full py-2 font-normal text-[14px] text-white box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
             <div className="container mx-auto items-center flex justify-between">
                 <div className="w-[50%] flex justify-between font-dmSans">
                     <h6 className="">Welcome to Ortencey Digital Market Agency</h6>
