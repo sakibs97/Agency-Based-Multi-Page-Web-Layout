@@ -4,12 +4,15 @@ import seoTwo from '../../assets/Services/service-details/seo-two.jpg'
 import one from '../../assets/Services/service-details/process-icon/one.png'
 import two from '../../assets/Services/service-details/process-icon/two.png'
 import three from '../../assets/Services/service-details/process-icon/three.png'
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from 'react-router-dom'
+
 
 const SeoDetails = () => {
     return (
         <section className='my-28'>
             <div className="container flex justify-between">
-                <div className="w-[70%]">
+                <div className="w-[68%]">
                     <div className="p-[20px] bg-[#F4F4FF] rounded-2xl">
                         <img src={seoImage} alt="" className='rounded-2xl' />
                     </div>
@@ -123,8 +126,57 @@ const SeoDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-[25%]">
-
+                <div className="w-[30%]">
+                    <div className="pt-[25px] pb-[30px] px-[30px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl">
+                        <h5 className='font-nuni font-bold text-[25px] text-main relative after:absolute after:h-[2px] after:w-full after:bg-[#EDEDFF] after:left-0 after:bottom-0 after:z-10 before:absolute before:h-[2px] before:w-[60px] before:bg-gradient-to-r before:from-startC before:to-endC before:bottom-0 before:z-20'>Our All Service</h5>
+                        <Link to='/seo-service-details'>
+                            <div className="mt-[25px] group">
+                                <button className='w-full pt-[15px] pb-[14px] px-[30px] bg-[#F4F4FF] group-hover:bg-gradient-to-r from-startC to-endC font-dmSans font-medium text-[20px] group-hover:text-white text-main rounded-full flex justify-between items-center duration-500'>Search Engine Optimization
+                                    <span><IoIosArrowRoundForward className='w-[25px] h-[19px] group-hover:w-[30px] group-hover:h-[30px] duration-500' /></span>
+                                </button>
+                            </div>
+                        </Link>
+                        <div className="mt-[25px] group">
+                            <button className='w-full pt-[15px] pb-[14px] px-[30px] bg-[#F4F4FF] group-hover:bg-gradient-to-r from-startC to-endC font-dmSans font-medium text-[20px] group-hover:text-white text-main rounded-full flex justify-between items-center duration-500'>Web Design & Development
+                                <span><IoIosArrowRoundForward className='w-[25px] h-[19px] group-hover:w-[30px] group-hover:h-[30px] duration-500' /></span>
+                            </button>
+                        </div>
+                        <div className="mt-[25px] group">
+                            <button className='w-full pt-[15px] pb-[14px] px-[25px] bg-[#F4F4FF] group-hover:bg-gradient-to-r from-startC to-endC font-dmSans font-medium text-[20px] group-hover:text-white text-main rounded-full flex justify-between items-center duration-500'>Email and Content Marketing
+                                <span><IoIosArrowRoundForward className='w-[25px] h-[19px] group-hover:w-[30px] group-hover:h-[30px] duration-500' /></span>
+                            </button>
+                        </div>
+                        <div className="mt-[25px] group">
+                            <button className='w-full pt-[15px] pb-[14px] px-[25px] bg-[#F4F4FF] group-hover:bg-gradient-to-r from-startC to-endC font-dmSans font-medium text-[20px] group-hover:text-white text-main rounded-full flex justify-between items-center duration-500'>Social Media Network Marting
+                                <span><IoIosArrowRoundForward className='w-[25px] h-[19px] group-hover:w-[25px] group-hover:h-[25px] duration-500' /></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="my-[50px] bg-[rgb(0,0,0,.7)] shadow-[0_3px_10px_rgb(0,0,0,0.2)] pt-[25px] pb-[30px] px-[30px] rounded-xl">
+                        <h5 className='font-nuni font-bold text-[25px] text-white relative after:absolute after:h-[2px] after:w-full after:bg-[#EDEDFF] after:left-0 after:bottom-0 after:z-10 before:absolute before:h-[2px] before:w-[60px] before:bg-gradient-to-r before:from-startC before:to-endC before:bottom-0 before:z-20 pb-[5px]'>Get a free quote</h5>
+                        <div className="">
+                            <input type="text" placeholder='Your Name' className='mt-[25px] mb-[20px] w-full rounded-full py-[15px] px-[26px] font-dmSans font-normal text-main text-[16px] leading-[26px]' />
+                            <input type="text" placeholder='Your Email Address' className='mb-[20px] w-full rounded-full py-[15px] px-[26px] font-dmSans font-normal text-main text-[16px] leading-[26px]' />
+                            <textarea
+                                className="py-[15px] px-[26px] rounded-2xl font-dmSans font-normal text-main text-[16px] leading-[26px] w-full min-h-[170px]"
+                                placeholder="Your Message here">
+                            </textarea>
+                            <button className='mt-[30px] py-[15px] px-[33px] bg-gradient-to-r from-startC to-endC rounded-full font-dmSans font-normal text-[18px] text-white leading-[30px] relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-[rgb(0,0,0,.2)] after:rounded-full overflow-hidden hover:after:w-0 after:duration-500'>Send Message</button>
+                        </div>
+                    </div>
+                    <div className="pt-[25px] pb-[30px] px-[30px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl">
+                        <h5 className='font-nuni font-bold text-[25px] text-main relative after:absolute after:h-[2px] after:w-full after:bg-[#EDEDFF] after:left-0 after:bottom-0 after:z-10 before:absolute before:h-[2px] before:w-[60px] before:bg-gradient-to-r before:from-startC before:to-endC before:bottom-0 before:z-20'>Download</h5>
+                        <div className="mt-[25px] group">
+                            <button className='w-full pt-[15px] pb-[14px] px-[25px] bg-[#F4F4FF] group-hover:bg-gradient-to-r from-startC to-endC font-dmSans font-medium text-[20px] group-hover:text-white text-main rounded-full flex justify-between items-center duration-500'>Our Brochures 2023
+                                <span><IoIosArrowRoundForward className='w-[25px] h-[19px] group-hover:w-[30px] group-hover:h-[30px] duration-500' /></span>
+                            </button>
+                        </div>
+                        <div className="mt-[25px] group">
+                            <button className='w-full pt-[15px] pb-[14px] px-[25px] bg-[#F4F4FF] group-hover:bg-gradient-to-r from-startC to-endC font-dmSans font-medium text-[20px] group-hover:text-white text-main rounded-full flex justify-between items-center duration-500'>About Our Company
+                                <span><IoIosArrowRoundForward className='w-[25px] h-[19px] group-hover:w-[30px] group-hover:h-[30px] duration-500' /></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
