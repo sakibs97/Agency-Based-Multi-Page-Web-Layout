@@ -6,6 +6,7 @@ import Service from './page/Service';
 import ErrorPage from './page/ErrorPage';
 import Contact from './page/Contact';
 import SeoServices from './page/SeoServices';
+import Team from './page/Team';
 
 let router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -13,6 +14,7 @@ let router = createBrowserRouter(createRoutesFromElements(
       <Route index element={<Home />}></Route>
       <Route path='/services' element={<Service />}></Route>
       <Route path='/seo-service-details' element={<SeoServices />}></Route>
+      <Route path='/team' element={<Team />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='*' element={<ErrorPage />}></Route>
     </Route>

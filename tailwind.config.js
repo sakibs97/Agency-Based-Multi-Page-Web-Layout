@@ -26,6 +26,7 @@ export default {
         not_found_banner: "URL(./src/assets/404/404_page.png)",
         contact_banner: "URL(./src/assets/contact/contact.jpg)",
         service_details_banner: "URL(./src/assets/services/service-details/service-banner.png)",
+        team_banner: "URL(./src/assets/team/team.jpg)",
       },
       colors:{       
         'main':'#1A1A1A',

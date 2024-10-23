@@ -111,9 +111,11 @@ const Navbar = () => {
                                 <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                             </Link>
                         </li>
-                        <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Team</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE681E]" />
+                        <li>
+                            <Link to='/team' className="relative flex items-center group lg:mx-3">
+                                <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Team</span>
+                                <IoIosArrowDown className="group-hover:text-[#FE681E]" />
+                            </Link>
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Pages</span>
