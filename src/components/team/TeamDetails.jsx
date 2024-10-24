@@ -17,7 +17,7 @@ import { useState } from 'react'
 
 const TeamDetails = () => {
 
-    const [showALl, setShowAll] = useState(false);
+    const [showAll, setShowAll] = useState(false);
 
     const teamMembers = [
         {
@@ -98,7 +98,7 @@ const TeamDetails = () => {
         },
     ];
 
-    const showMembers = showALl ? teamMembers : teamMembers.slice(0, 8);
+    const showMembers = showAll ? teamMembers : teamMembers.slice(0, 8);
 
     return (
         <section className="py-28">
@@ -178,8 +178,8 @@ const TeamDetails = () => {
                 <div className="w-full mt-4 text-end">
                     <button
                         className="bg-gradient-to-r from-startC to-endC text-white font-bold py-2 px-4 rounded relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-[rgba(0,0,0,0.15)] hover:after:w-0 overflow-hidden after:duration-500"
-                        onClick={() => setShowAll(!showALl)}>
-                        {showALl ? 'Show Less' : 'Show All'}
+                        onClick={() => setShowAll(!showAll)}>
+                        {showAll ? 'Show Less' : 'Show All'}
                     </button>
                 </div>
             </div>
