@@ -12,9 +12,94 @@ import wThree from '../../assets/team/team-details/w-three.jpg'
 import wFour from '../../assets/team/team-details/w-four.jpg'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 
 const TeamDetails = () => {
+
+    const [showALl, setShowAll] = useState(false);
+
+    const teamMembers = [
+        {
+            name: 'Robert Sions',
+            role: 'Business Consultant',
+            img: one,
+            link: '/team-details',
+            facebook: 'https://facebook.com/robert.sions',
+            twitter: 'https://twitter.com/robert_sions',
+            linkedin: 'https://linkedin.com/in/robert-sions',
+            youtube: 'https://youtube.com/channel/robert_sions',
+        },
+        {
+            name: 'David Phillips',
+            role: 'Senior Manager',
+            img: two,
+            link: '/team-details'
+        },
+        {
+            name: 'Karikok Jahan',
+            role: 'Executive Manager',
+            img: wOne,
+            link: '/team-details'
+        },
+        {
+            name: 'Dickerson MH',
+            role: 'Agency Analysis',
+            img: three,
+            link: '/team-details'
+        },
+        {
+            name: 'Dickerson MH',
+            role: 'Agency Analysis',
+            img: four,
+            link: '/team-details'
+        },
+        {
+            name: 'Alextina Ditarson',
+            role: 'Graphic Designer',
+            img: wTwo,
+            link: '/team-details'
+        },
+        {
+            name: 'David Phillips',
+            role: 'Senior Manager',
+            img: five,
+            link: '/team-details'
+        },
+        {
+            name: 'Robert Sions',
+            role: 'Business Consultant',
+            img: six,
+            link: '/team-details'
+        },
+        {
+            name: 'Leslie Alexander',
+            role: 'Product Designer',
+            img: wThree,
+            link: '/team-details'
+        },
+        {
+            name: 'Guy Hawkins',
+            role: 'WP Developer',
+            img: seven,
+            link: '/team-details'
+        },
+        {
+            name: 'Zin Denvar',
+            role: 'Agency Analysis',
+            img: wFour,
+            link: '/team-details'
+        },
+        {
+            name: 'Kari Rasmussen',
+            role: 'Executive Manager',
+            img: eight,
+            link: '/team-details'
+        },
+    ];
+
+    const showMembers = showALl ? teamMembers : teamMembers.slice(0, 8);
+
     return (
         <section className="py-28">
             <div className="container">
@@ -44,347 +129,58 @@ const TeamDetails = () => {
                     <h4 className='font-nuni font-bold text-main text-[46px] leading-[56px]'>Creative Team Member</h4>
                 </div>
                 <div className="flex flex-wrap flex-col-4 justify-between">
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <Link to='/team-details'>
-                                    <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                </Link>
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <Link to='/team-details'>
-                                <div className="text-center py-[20px] group-hover:py-[18px]">
-                                    <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <Link to='/team-details'>
-                                    <img src={two} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                </Link>
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
+                    {showMembers.map((items, index) => (
+                        <>
+                            <div key={index} className="w-[24%] group mt-[24px]">
+                                <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
+                                    <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
+                                        <Link to={items.link}>
+                                            <img src={items.img}
+                                                alt={items.name}
+                                                className='group-hover:h-[230px] group-hover:w-auto group-hover:mx-auto w-full duration-300 ease-in-out rounded-2xl' />
+                                        </Link>
+                                        <div className="hidden group-hover:block duration-300 ease-in-out">
+                                            <div className="py-[18px] flex justify-between mx-auto w-[200px]">
+                                                <Link to={items.facebook}
+                                                    target='_blank'
+                                                    className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                                    <FaFacebookF className='w-[7.27px] h-[15.06px]' />
+                                                </Link>
+                                                <Link to={items.twitter}
+                                                    target='_blank'
+                                                    className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                                    <FaTwitter className='w-[20px] h-[15.06px]' />
+                                                </Link>
+                                                <Link to={items.linkedin}
+                                                    target='_blank'
+                                                    className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                                    <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
+                                                </Link>
+                                                <Link to={items.youtube}
+                                                    target='_blank'
+                                                    className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                                    <FaYoutube className='w-[19.09px] h-[15.06px]' />
+                                                </Link>
+                                            </div>
                                         </div>
                                     </div>
+                                    <Link to='/team-details'>
+                                        <div className="text-center py-[20px] group-hover:py-[18px]">
+                                            <h5 className="font-nuni font-bold text-[25px] text-main">{items.name}</h5>
+                                            <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">{items.role}</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
-                            <Link to='/team-details'>
-                                <div className="text-center py-[20px] group-hover:py-[18px]">
-                                    <h5 className="font-nuni font-bold text-[25px] text-main">David Phillips</h5>
-                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Senior Manager</p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <Link to='/team-details'>
-                                    <img src={wOne} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                </Link>
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <Link to='/team-details'>
-                                <div className="text-center py-[20px] group-hover:py-[18px]">
-                                    <h5 className="font-nuni font-bold text-[25px] text-main">Karikok Jahan</h5>
-                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Executive Manager</p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <Link to='/team-details'>
-                                    <img src={three} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                </Link>
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <Link to='/team-details'>
-                                <div className="text-center py-[20px] group-hover:py-[18px]">
-                                    <h5 className="font-nuni font-bold text-[25px] text-main">Dickerson MH</h5>
-                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Agency Analysis</p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={four} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Dickerson MH</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Agency Analysis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={wTwo} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Alextina Ditarson</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Graphic Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={five} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">David Phillips</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Senior Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={six} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={wThree} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Leslie Alexander</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={seven} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Guy Hawkins</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">WP Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={wFour} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Zin Denvar</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Agency Analysis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={eight} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Kari Rasmussen</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Executive Manager</p>
-                            </div>
-                        </div>
-                    </div>
-
+                        </>
+                    ))}
+                </div>
+                <div className="w-full mt-4 text-end">
+                    <button
+                        className="bg-gradient-to-r from-startC to-endC text-white font-bold py-2 px-4 rounded relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-[rgba(0,0,0,0.15)] hover:after:w-0 overflow-hidden after:duration-500"
+                        onClick={() => setShowAll(!showALl)}>
+                        {showALl ? 'Show Less' : 'Show All'}
+                    </button>
                 </div>
             </div>
         </section >
