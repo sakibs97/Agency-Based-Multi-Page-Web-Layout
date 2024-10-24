@@ -11,6 +11,7 @@ import wTwo from '../../assets/team/team-details/w-two.jpg'
 import wThree from '../../assets/team/team-details/w-three.jpg'
 import wFour from '../../assets/team/team-details/w-four.jpg'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 
 const TeamDetails = () => {
@@ -44,9 +45,11 @@ const TeamDetails = () => {
                 </div>
                 <div className="flex flex-wrap flex-col-4 justify-between">
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <Link to='/team-details'>
+                                    <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
+                                </Link>
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -64,16 +67,20 @@ const TeamDetails = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
-                            </div>
+                            <Link to='/team-details'>
+                                <div className="text-center py-[20px] group-hover:py-[18px]">
+                                    <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
+                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={two} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <Link to='/team-details'>
+                                    <img src={two} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
+                                </Link>
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -91,16 +98,20 @@ const TeamDetails = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">David Phillips</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Senior Manager</p>
-                            </div>
+                            <Link to='/team-details'>
+                                <div className="text-center py-[20px] group-hover:py-[18px]">
+                                    <h5 className="font-nuni font-bold text-[25px] text-main">David Phillips</h5>
+                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Senior Manager</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={wOne} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <Link to='/team-details'>
+                                    <img src={wOne} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
+                                </Link>
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -118,16 +129,49 @@ const TeamDetails = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Karikok Jahan</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Executive Manager</p>
-                            </div>
+                            <Link to='/team-details'>
+                                <div className="text-center py-[20px] group-hover:py-[18px]">
+                                    <h5 className="font-nuni font-bold text-[25px] text-main">Karikok Jahan</h5>
+                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Executive Manager</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={three} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <Link to='/team-details'>
+                                    <img src={three} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
+                                </Link>
+                                <div className="hidden group-hover:block duration-500 ease-in-out">
+                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
+                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
+                                        </div>
+                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                            <FaTwitter className='w-[20px] h-[15.06px]' />
+                                        </div>
+                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
+                                        </div>
+                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
+                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <Link to='/team-details'>
+                                <div className="text-center py-[20px] group-hover:py-[18px]">
+                                    <h5 className="font-nuni font-bold text-[25px] text-main">Dickerson MH</h5>
+                                    <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Agency Analysis</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="w-[24%] group mt-[24px]">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
+                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
+                                <img src={four} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -152,36 +196,9 @@ const TeamDetails = () => {
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={four} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
-                                <div className="hidden group-hover:block duration-500 ease-in-out">
-                                    <div className="py-[18px] flex justify-between mx-auto w-[200px]">
-                                        <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaFacebookF className='w-[7.27px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] px-[10.91px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaTwitter className='w-[20px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[12.73px] pb-[13.25px] pl-[13.64px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaLinkedinIn className='w-[15.45px] h-[15.06px]' />
-                                        </div>
-                                        <div className="pt-[13.7px] pr-[10.91px] pb-[13.25px] pl-[11.82px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
-                                            <FaYoutube className='w-[19.09px] h-[15.06px]' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Dickerson MH</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Agency Analysis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
-                            <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={wTwo} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={wTwo} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -206,9 +223,9 @@ const TeamDetails = () => {
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={five} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={five} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -233,9 +250,9 @@ const TeamDetails = () => {
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={six} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -260,9 +277,9 @@ const TeamDetails = () => {
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={wThree} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -281,15 +298,15 @@ const TeamDetails = () => {
                                 </div>
                             </div>
                             <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
+                                <h5 className="font-nuni font-bold text-[25px] text-main">Leslie Alexander</h5>
+                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Product Designer</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={seven} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -308,15 +325,15 @@ const TeamDetails = () => {
                                 </div>
                             </div>
                             <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
+                                <h5 className="font-nuni font-bold text-[25px] text-main">Guy Hawkins</h5>
+                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">WP Developer</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={wFour} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -335,15 +352,15 @@ const TeamDetails = () => {
                                 </div>
                             </div>
                             <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
+                                <h5 className="font-nuni font-bold text-[25px] text-main">Zin Denvar</h5>
+                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Agency Analysis</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-[24%] group mt-[24px]">
-                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out cursor-pointer">
+                        <div className="bg-[#F4F4FF] group-hover:bg-[#fff] rounded-2xl group-hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-300 ease-in-out">
                             <div className="group-hover:bg-[#F4F4FF] px-[20px] pt-[20px] rounded-2xl duration-300 ease-in-out">
-                                <img src={one} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out' />
+                                <img src={eight} alt="" className='group-hover:h-[230px] w-full duration-500 ease-in-out rounded-2xl' />
                                 <div className="hidden group-hover:block duration-500 ease-in-out">
                                     <div className="py-[18px] flex justify-between mx-auto w-[200px]">
                                         <div className="pt-[13.7px] px-[17.27px] pb-[13.25px] text-[#3661FC] bg-[#fff] rounded-full hover:bg-[#3661FC] hover:text-[#fff] duration-300 cursor-pointer">
@@ -362,15 +379,15 @@ const TeamDetails = () => {
                                 </div>
                             </div>
                             <div className="text-center py-[20px] group-hover:py-[18px]">
-                                <h5 className="font-nuni font-bold text-[25px] text-main">Robert Sions</h5>
-                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Business Consultant</p>
+                                <h5 className="font-nuni font-bold text-[25px] text-main">Kari Rasmussen</h5>
+                                <p className="font-dmSans font-normal text-[16px] text-ptag leading-[26px]">Executive Manager</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
