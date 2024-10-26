@@ -2,12 +2,9 @@ import growth from "../assets/team-member/growth.jpg";
 import customer from "../assets/team-member/customer.jpg";
 import marketing from "../assets/team-member/marketing.jpg";
 import startup from "../assets/team-member/startup.jpg";
-import growthTwo from "../assets/team-member/growth-two.jpg";
-import customerTwo from "../assets/team-member/customer-two.jpg";
-import marketingTwo from "../assets/team-member/marketing-two.jpg";
-import startupTwo from "../assets/team-member/startup-two.jpg";
 import Slider from "react-slick";
 import { BsPlusLg } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function NextArrow(props) {
     const { onClick } = props;
@@ -49,8 +46,39 @@ function PrevArrow(props) {
     );
 }
 
+const OurProject = () => {
 
-const PortfolioSlider = () => {
+    let allProjects = [
+        {
+            id: 1,
+            img: growth,
+            title: 'Corporate Startup Agency',
+            post: 'Roadmap, Growth',
+            link: '/'
+        },
+        {
+            id: 2,
+            img: customer,
+            title: 'Monthly Design Magazine',
+            post: 'Print, Books',
+            link: '/'
+        },
+        {
+            id: 3,
+            img: startup,
+            title: 'Agency Growth Check',
+            post: 'Marketing, Growth',
+            link: '/'
+        },
+        {
+            id: 4,
+            img: marketing,
+            title: 'Customer Product Analytic',
+            post: 'Analytics, Growth',
+            link: '/'
+        },
+    ]
+
     const settings = {
         dots: false,
         infinite: true,
@@ -86,78 +114,31 @@ const PortfolioSlider = () => {
             </div>
             <div className="mt-8">
                 <Slider {...settings}>
-                    <div className="relative group cursor-pointer mx-2">
-                        <img src={growth} alt="" className="group-hover:opacity-0 rounded-3xl" />
-                        <div className="absolute -top-0 left-0 z-50">
-                            <img src={growthTwo} alt="" className="relative rounded-3xl opacity-0 group-hover:opacity-100" />
-                            <div className="hidden group-hover:block">
-                                <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px]">
+                    {allProjects.map((item, index) => (
+                        <>
+                            <div key={index} className="relative group cursor-pointer mx-2 ">
+                                <img src={item.img} alt="" className="group-hover:h-[350px] group-hover:w-[464px] rounded group-hover:rounded-b-3xl group-hover:z-50 duration-500 ease-in-out" />
+                                <div className="absolute min-w-[464px] left-0 top-[330px] bg-[#F4F4F4] rounded-b-3xl flex items-center justify-between px-[50px] pt-[50px] pb-[28px] -z-10">
                                     <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Corporate Startup Agency</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Roadmap, Growth</p>
+                                        <h4 className="font-dmSans font-medium text-main text-[20px]">{item.title}</h4>
+                                        <p className="font-dmSans font-normal text-[16px] text-ptag">{item.post}</p>
                                     </div>
                                     <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
                                         <BsPlusLg className="text-white w-[22px] h-[22px]" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="relative group cursor-pointer mx-2">
-                        <img src={customer} alt="customer" className="rounded-3xl group-hover:opacity-0" />
-                        <div className="absolute -top-0 left-0 z-50">
-                            <img src={customerTwo} alt="customerTow" className="rounded-3xl relative group-hover:opacity-100 opacity-0" />
-                            <div className="hidden group-hover:block">
-                                <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px] ">
-                                    <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Monthly Design Magazine</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Print, Books</p>
-                                    </div>
-                                    <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
-                                        <BsPlusLg className="text-white w-[22px] h-[22px]" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative group cursor-pointer mx-2">
-                        <img src={startup} alt="startup" className="rounded-3xl group-hover:opacity-0" />
-                        <div className="absolute -top-0 left-0 z-50">
-                            <img src={startupTwo} alt="" className="rounded-3xl relative opacity-0 group-hover:opacity-100" />
-                            <div className="hidden group-hover:block">
-                                <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px] ">
-                                    <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Agency Growth Check</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Marketing, Growth</p>
-                                    </div>
-                                    <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
-                                        <BsPlusLg className="text-white w-[22px] h-[22px]" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative group cursor-pointer mx-2">
-                        <img src={marketing} alt="marketing" className="rounded-3xl group-hover:opacity-0 " />
-                        <div className="absolute -top-0 left-0 z-50">
-                            <img src={marketingTwo} alt="" className="rounded-3xl relative opacity-0 group-hover:opacity-100" />
-                            <div className="hidden group-hover:block">
-                                <div className="absolute -bottom-[115px] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center -z-10 justify-between px-[50px] pt-[80px] pb-[28px] ">
-                                    <div className="">
-                                        <h4 className="font-dmSans font-medium text-main text-[20px]">Customer Product Analytic</h4>
-                                        <p className="font-dmSans font-normal text-[16px] text-ptag">Analytics, Growth</p>
-                                    </div>
-                                    <div className="bg-gradient-to-l from-startC to-endC p-[13px] rounded-full">
-                                        <BsPlusLg className="text-white w-[22px] h-[22px]" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </>
+                    ))}
                 </Slider>
             </div>
+            <div className="text-center mt-8">
+                <Link to='/portfolio'>
+                    <button className="py-[15px] px-[33px] bg-gradient-to-r from-startC to-endC rounded-full font-dmSans font-normal text-[18px] text-white leading-[30px]">View More Projects</button>
+                </Link>
+            </div>
         </section>
-    );
-};
+    )
+}
 
-export default PortfolioSlider;
+export default OurProject
