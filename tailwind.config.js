@@ -23,9 +23,10 @@ export default {
         service_we_work_banner: "URL(./src/assets/Services/work/workban.png)",
         service_support_banner: "URL(./src/assets/Services/work/support/banner.jpg)",
         service_support_banner_after: "URL(./src/assets/Services/work/support/after.png)",
+        service_details_banner: "URL(./src/assets/services/service-details/service-banner.png)",
+        portfolio_banner: "URL(./src/assets/team-member/profolio/portfolio.jpg)",
         not_found_banner: "URL(./src/assets/404/404_page.png)",
         contact_banner: "URL(./src/assets/contact/contact.jpg)",
-        service_details_banner: "URL(./src/assets/services/service-details/service-banner.png)",
         team_banner: "URL(./src/assets/team/team.jpg)",
       },
       colors:{       

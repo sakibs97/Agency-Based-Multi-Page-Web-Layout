@@ -3,13 +3,13 @@ import growth1 from "../../assets/team-member/profolio/growth1.jpg";
 import { BsPlusLg } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-let protfolioData = [
+let portfolioData = [
     {
         id: 1,
         img: growth1,
         title: 'Corporate Startup Agency',
         post: 'Roadmap, Growth',
-        link: '/'
+        link: '/portfolio-details'
     },
     {
         id: 2,
@@ -86,8 +86,9 @@ let protfolioData = [
 
 const AllProtfolio = () => {
 
-    let [show, setShow] = useState(false)
-    let protfoliInfo = show ? protfolioData : protfolioData.slice(0, 6)
+    let [show, setShow] = useState(false);
+    let portfolioInfo = show ? portfolioData : portfolioData.slice(0, 6);
+
     return (
         <section className="my-28">
             <div className="container">
@@ -112,17 +113,17 @@ const AllProtfolio = () => {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <h6 className='font-dmSans font-medium text-[20px] text-[#3661FC] pl-[10px]'>Work Prosses</h6>
+                        <h6 className='font-dmSans font-medium text-[20px] text-transparent bg-gradient-to-r from-startC to-endC bg-clip-text pl-[10px]'>Our Portfolio</h6>
                     </div>
-                    <h4 className='font-nuni font-bold text-main text-[46px] leading-[56px]'>How We Work!</h4>
+                    <h4 className='font-nuni font-bold text-main text-[46px] leading-[56px]'>Our Impressive Portfolio</h4>
                 </div>
                 <div className="grid grid-cols-3">
-                    {protfoliInfo.map((item, index) => (
+                    {portfolioInfo.map((item, index) => (
                         <>
                             <div key={index} className="relative group cursor-pointer mx-[10px] mt-[20px]">
                                 <Link to={item.link}>
                                     <img src={item.img} alt="" className="group-hover:h-[340px] group-hover:w-[464px] rounded group-hover:rounded-b-3xl group-hover:z-50 duration-500 ease-in-out" />
-                                    <div className="absolute left-0 bottom-[0] w-full bg-[#F4F4F4] rounded-b-3xl flex items-center justify-between px-[50px] pt-[50px] pb-[28px] -z-10">
+                                    <div className="absolute left-0 bottom-0 w-full bg-[#F4F4F4] rounded-b-3xl flex items-center justify-between px-[50px] pt-[60px] pb-[28px] -z-10">
                                         <div className="">
                                             <h4 className="font-dmSans font-medium text-main text-[20px]">{item.title}</h4>
                                             <p className="font-dmSans font-normal text-[16px] text-ptag">{item.post}</p>

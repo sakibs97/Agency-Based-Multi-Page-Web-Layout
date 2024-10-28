@@ -48,7 +48,7 @@ function PrevArrow(props) {
 
 const OurProject = () => {
 
-    let allProjects = [
+    let projects = [
         {
             id: 1,
             img: growth,
@@ -77,7 +77,7 @@ const OurProject = () => {
             post: 'Analytics, Growth',
             link: '/'
         },
-    ]
+    ];
 
     const settings = {
         dots: false,
@@ -87,23 +87,6 @@ const OurProject = () => {
         slidesToScroll: 1,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
-
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 1,
-        //         },
-        //     },
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //         },
-        //     },
-        // ],
     };
 
     return (
@@ -114,7 +97,7 @@ const OurProject = () => {
             </div>
             <div className="mt-8">
                 <Slider {...settings}>
-                    {allProjects.map((item, index) => (
+                    {projects.map((item, index) => (
                         <>
                             <div key={index} className="relative group cursor-pointer mx-2 ">
                                 <img src={item.img} alt="" className="group-hover:h-[350px] group-hover:w-[464px] rounded group-hover:rounded-b-3xl group-hover:z-50 duration-500 ease-in-out" />

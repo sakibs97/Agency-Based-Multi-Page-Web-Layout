@@ -9,6 +9,7 @@ import SeoServices from './page/SeoServices';
 import Team from './page/Team';
 import TeamMemberInfo from './page/TeamMemberInfo';
 import OurPortfolio from './page/OurPortfolio';
+import PortfolioDetails from './page/PortfolioDetails';
 
 let router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -19,6 +20,7 @@ let router = createBrowserRouter(createRoutesFromElements(
       <Route path='/team' element={<Team />}></Route>
       <Route path='/team-details' element={<TeamMemberInfo />}></Route>
       <Route path='/portfolio' element={<OurPortfolio />}></Route>
+      <Route path='/portfolio-details' element={<PortfolioDetails />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='*' element={<ErrorPage />}></Route>
     </Route>
