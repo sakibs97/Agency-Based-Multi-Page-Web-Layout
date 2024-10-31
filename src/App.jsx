@@ -10,6 +10,7 @@ import Team from './page/Team';
 import TeamMemberInfo from './page/TeamMemberInfo';
 import OurPortfolio from './page/OurPortfolio';
 import PortfolioDetails from './page/PortfolioDetails';
+import Pricing from './page/Pricing';
 
 let router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -22,6 +23,7 @@ let router = createBrowserRouter(createRoutesFromElements(
       <Route path='/portfolio' element={<OurPortfolio />}></Route>
       <Route path='/portfolio-details' element={<PortfolioDetails />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
+      <Route path='/pricing' element={<Pricing />}></Route>
       <Route path='*' element={<ErrorPage />}></Route>
     </Route>
   </>

@@ -5,6 +5,7 @@ import date from "../assets/footer/date.png";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -66,15 +67,21 @@ const Footer = () => {
                                     Featured Services
                                     <span className="block h-[2px] w-[85px] bg-main absolute bottom-0 left-0"></span>
                                 </h5>
-                                <ul className="list-disc pt-[22px] space-y-2 mx-5">
-                                    <li className="marker:text-[#3661FC] font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
-                                        Social Media Marketing
+                                <ul className="list-disc pt-[22px] space-y-2 mx-5 marker:text-[#3661FC]">
+                                    <li>
+                                        <Link to='/' className="font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
+                                            Social Media Marketing
+                                        </Link>
                                     </li>
-                                    <li className="marker:text-[#3661FC] font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
-                                        Pay Per Click Management
+                                    <li>
+                                        <Link to='/pricing' className="font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
+                                            Pay Per Click Management
+                                        </Link>
                                     </li>
-                                    <li className="marker:text-[#3661FC] font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
-                                        Search Engine Optimization
+                                    <li>
+                                        <Link to='/seo-service-details' className="font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
+                                            Search Engine Optimization
+                                        </Link>
                                     </li>
                                     <li className="marker:text-[#3661FC] font-dmSans font-normal text-[16px] leading-[36px] text-ptag hover:text-[#3661fc]">
                                         Free SEO Analysis
