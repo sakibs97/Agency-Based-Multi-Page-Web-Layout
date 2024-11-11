@@ -1,9 +1,13 @@
-import Faq from '../components/Faq'
+import AnyQuestion from '../components/faq/AnyQuestion'
+import Faq from '../components/faq/Faq'
+import FaqBanner from '../components/faq/FaqBanner'
 
 const Frequently = () => {
     return (
         <>
+            <FaqBanner />
             <Faq />
+            <AnyQuestion />
         </>
     )
 }

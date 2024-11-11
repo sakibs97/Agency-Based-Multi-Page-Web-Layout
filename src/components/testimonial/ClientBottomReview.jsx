@@ -1,49 +1,56 @@
-import icon from '../../assets/testimonial/Icon.png'
+/* eslint-disable react/prop-types */
+import icon2 from '../../assets/testimonial/Icon2.png'
+import { reviewData } from './ReviewData'
 import { FaStar } from "react-icons/fa";
 import Slider from "react-slick";
-import { reviewData } from './ReviewData';
+import { FaArrowRight, FaArrowLeftLong } from "react-icons/fa6";
 
-const ClientTopReview = () => {
+function NextArrow(props) {
+    const { onClick, currentSlide, slideCount, slidesToShow } = props;
+    const isAtEnd = currentSlide >= slideCount - slidesToShow;
 
+    return (
+        <div
+            className={`absolute right-0 top-[50%] translate-y-[-50%] py-[24px] pr-[20px] pl-[21px] bg-[#3661FC] text-white rounded-full cursor-pointer transition-opacity duration-300 ${isAtEnd ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}
+            onClick={isAtEnd ? null : onClick}
+        >
+            <FaArrowRight className="w-[19px] h-[12px]" />
+        </div>
+    );
+}
+
+
+function PrevArrow(props) {
+    const { onClick, currentSlide } = props;
+    const isAtStart = currentSlide === 0;
+
+    return (
+        <div
+            className={`absolute left-0 top-[50%] translate-y-[-50%] py-[24px] px-[20px] bg-[#3661FC] text-white rounded-full cursor-pointer z-50 ${isAtStart ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}
+            onClick={isAtStart ? null : onClick}
+        >
+            <FaArrowLeftLong className="w-[19px] h-[12px]" />
+        </div>
+    );
+}
+
+
+const ClientBottomReview = () => {
 
     const settings = {
-        dots: true,
-        infinite: true,
-        arrows: false,
-        autoplay: true,
-        slidesToShow: 2,
+        dots: false,
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 5000,
-        appendDots: dots => (
-            <div
-                style={{
-                    position: "absolute",
-                    left: "50%",
-                    bottom: "-10%",
-                    transform: "translateX(-50%)"
-
-                }}
-            >
-                <ul style={{ margin: "0px" }}> {dots} </ul>
-            </div>
-        ),
-        customPaging: () => (
-            <div
-                style={{
-                    padding: "5px 0",
-                    width: "20px",
-                    fontWeight: "600",
-                    color: "transparent",
-                    borderRight: "20px #FFAA52 solid",
-                }}
-            >
-            </div>
-        )
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
     };
 
     return (
-        <section>
-            <div className="container my-28">
+        <section className="my-28">
+            <div className="container">
                 <div className="text-center mb-[20px]">
                     <div className="flex items-center justify-center">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,22 +76,12 @@ const ClientTopReview = () => {
                     </div>
                     <h4 className='font-nuni font-bold text-main text-[46px] leading-[56px]'>What Our Client Say</h4>
                 </div>
-                <div className="">
-                    <Slider {...settings}>
-                        {reviewData.map((item, index) => (
-                            <>
-                                <div key={index} className="relative pr-[50px] py-[36px] bg-gradient-to-l from-[#F4F4FF] to-[rgb(244,244,255,21%)] rounded-3xl m-[20px]">
-                                    <div className="flex justify-between">
-                                        <img src={icon} alt="icon" />
-                                        <div className="flex px-[20px] py-[15px] bg-[#FFFFFF] rounded-full">
-                                            <FaStar className='mr-[6.68px] text-[#FCC013]' />
-                                            <FaStar className='mr-[6.68px] text-[#FCC013]' />
-                                            <FaStar className='mr-[6.68px] text-[#FCC013]' />
-                                            <FaStar className='mr-[6.68px] text-[#FCC013]' />
-                                            <FaStar className='text-[#FCC013]' />
-                                        </div>
-                                    </div>
-                                    <p className='font-dmSans font-normal text-[20px] text-main leading-[30px] py-[30px]'>{item.description}</p>
+                <Slider {...settings}>
+                    {reviewData.map((item) => (
+                        <>
+                            <div className="w-[800px] mx-auto mt-[20px]">
+                                <div className="flex justify-between items-center">
+                                    <img src={icon2} alt="icon2" />
                                     <div className="flex items-center">
                                         <img src={item.image} alt="profile" />
                                         <div className="pl-[20px]">
@@ -92,14 +89,23 @@ const ClientTopReview = () => {
                                             <p className='font-dmSans font-normal text-[16px] text-ptag'>{item.position}</p>
                                         </div>
                                     </div>
+                                    <div className="flex px-[20px] py-[15px] bg-[#F4F4FF] rounded-full">
+                                        <FaStar className='mr-[6.68px] text-[#FCC013]' />
+                                        <FaStar className='mr-[6.68px] text-[#FCC013]' />
+                                        <FaStar className='mr-[6.68px] text-[#FCC013]' />
+                                        <FaStar className='mr-[6.68px] text-[#FCC013]' />
+                                        <FaStar className='text-[#FCC013]' />
+                                    </div>
                                 </div>
-                            </>
-                        ))}
-                    </Slider>
-                </div>
+                                <p className='font-dmSans font-normal text-[20px] text-main leading-[30px] py-[30px]'>{item.description}</p>
+                            </div>
+
+                        </>
+                    ))}
+                </Slider>
             </div>
-        </section >
+        </section>
     )
 }
 
-export default ClientTopReview
+export default ClientBottomReview

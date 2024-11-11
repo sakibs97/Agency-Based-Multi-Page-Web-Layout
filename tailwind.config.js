@@ -29,6 +29,8 @@ export default {
         pricing_banner: "URL(./src/assets/pricing/pricing.jpg)",
         pricing_details_banner: "URL(./src/assets/pricing/icon/banner.png)",
         testimonial_banner: "URL(./src/assets/testimonial/testimonial.jpg)",
+        faq_banner: "URL(./src/assets/faq/faq_banner.jpg)",
+        any_question_banner: "URL(./src/assets/faq/after.png)",
         not_found_banner: "URL(./src/assets/404/404_page.png)",
         contact_banner: "URL(./src/assets/contact/contact.jpg)",
         team_banner: "URL(./src/assets/team/team.jpg)",

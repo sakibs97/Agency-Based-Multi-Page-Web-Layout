@@ -4,10 +4,10 @@ import AboutOurCompany from '../components/AboutOurCompany';
 import OurServices from '../components/OurServices';
 import Brands from '../components/Brands';
 import ClientSay from '../components/ClientSay';
-import Faq from '../components/Faq';
 import OurBlog from '../components/OurBlog';
 import Sponser from '../components/Sponser';
 import OurProject from '../components/OurProject';
+import Faq from '../components/faq/Faq';
 
 const Home = () => {
     return (
