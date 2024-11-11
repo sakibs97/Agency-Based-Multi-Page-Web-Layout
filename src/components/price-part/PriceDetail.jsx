@@ -2,7 +2,6 @@ import { FaDollarSign } from "react-icons/fa";
 import icon from '../../assets/pricing/icon/icon.png'
 import icon2 from '../../assets/pricing/icon/icon2.png'
 import icon3 from '../../assets/pricing/icon/icon3.png'
-import ServiceProjects from "../ServiceProjects";
 
 const PriceDetail = () => {
     return (

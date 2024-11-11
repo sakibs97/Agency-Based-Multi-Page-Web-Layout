@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        // fixed w-full z-20 top-0 start-0
         <section className="absolute w-full z-20 top-8 start-0">
             <div className="container flex justify-between items-center bg-transparent py-4">
                 <div className="flex items-center">
@@ -91,19 +90,19 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className="container z-50">
+            <div className="container">
                 <nav className=" flex justify-between bg-white px-5 rounded-full">
-                    <ul className="font-pop font-normal text-[16px] text-main leading-[90px] flex items-center">
+                    <ul className="font-pop font-normal text-[16px] text-main flex items-center">
                         <Link to='/'>
-                            <li className="relative flex items-center group lg:mx-3">
+                            <li className="relative flex items-center group lg:mx-3 leading-[90px]">
                                 <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Home</span>
                                 <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                             </li>
                         </Link>
-                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3">
+                        <li className="relative hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center lg:mx-3 leading-[90px]">
                             About
                         </li>
-                        <li>
+                        <li className="leading-[90px]">
                             <Link to='/services'
                                 className="relative flex items-center group lg:mx-3"
                             >
@@ -111,15 +110,36 @@ const Navbar = () => {
                                 <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                             </Link>
                         </li>
-                        <li>
+                        <li className="leading-[90px]">
                             <Link to='/team' className="relative flex items-center group lg:mx-3">
                                 <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Team</span>
                                 <IoIosArrowDown className="group-hover:text-[#FE681E]" />
                             </Link>
                         </li>
-                        <li className="relative flex items-center group lg:mx-3">
-                            <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Pages</span>
-                            <IoIosArrowDown className="group-hover:text-[#FE681E]" />
+                        <li className="relative z-10 group">
+                            <Link className="relative flex items-center group lg:mx-3 leading-[90px]">
+                                <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">Pages</span>
+                                <IoIosArrowDown className="group-hover:text-[#FE681E]" />
+                            </Link>
+                            <div className="absolute top-[0px] group-hover:top-[90px] group-hover:left-0 duration-500 opacity-0 group-hover:opacity-100">
+                                <ul className="bg-[#000000b4] px-[10px] group-hover:py-[10px]">
+                                    <li className="group-hover:py-[10px]">
+                                        <Link to='/pricing' className="text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:duration-500 after:bg-gradient-to-r after:from-startC after:to-endC pb-[5px]">
+                                            Pricing
+                                        </Link>
+                                    </li>
+                                    <li className="group-hover:py-[10px]">
+                                        <Link to='/testimonial' className="text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:duration-500 after:bg-gradient-to-r after:from-startC after:to-endC pb-[5px]">
+                                            Testimonial
+                                        </Link>
+                                    </li>
+                                    <li className="group-hover:py-[10px]">
+                                        <Link to='/faq' className="text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:duration-500 after:bg-gradient-to-r after:from-startC after:to-endC pb-[5px]">
+                                            Faq
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li className="relative flex items-center group lg:mx-3">
                             <span className="group-hover:text-[#FE681E] menu-bar after:bg-gradient-to-r after:from-startC after:to-endC duration-300 flex items-center">News</span>

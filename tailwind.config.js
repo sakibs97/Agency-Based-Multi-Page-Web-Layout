@@ -28,6 +28,7 @@ export default {
         portfolio_banner: "URL(./src/assets/team-member/profolio/portfolio.jpg)",
         pricing_banner: "URL(./src/assets/pricing/pricing.jpg)",
         pricing_details_banner: "URL(./src/assets/pricing/icon/banner.png)",
+        testimonial_banner: "URL(./src/assets/testimonial/testimonial.jpg)",
         not_found_banner: "URL(./src/assets/404/404_page.png)",
         contact_banner: "URL(./src/assets/contact/contact.jpg)",
         team_banner: "URL(./src/assets/team/team.jpg)",
