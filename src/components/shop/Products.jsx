@@ -100,41 +100,21 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
-                        <img src={image} alt="" className="mx-auto" />
-                        <div className="mt-[30px]">
-                            <Link className="font-dmSans font-medium text-[16px] text-main leading-[26px] group-hover:text-[#3661FC]">Apple iPhone 14 Pro Max 128 GB Deep Purple (eSIM)</Link>
-                            <p className="font-dmSans font-medium text-[20px] text-main pt-[12px] pb-[25px]">$2000</p>
-                            <button
-                                className="flex items-center py-[12px] bg-[#fff] w-full rounded-full justify-center font-pop font-medium text-[18px] text-[#6B6161] leading-[26px] group-hover:text-[#3661FC]">
-                                <IoBagHandleOutline className="w-[16px] h-[17.45px] mr-[10px]" />
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                    <div className="bg-[#F4F4FF] p-[30px] rounded-2xl group">
-                        <div className="flex items-center justify-between pb-[30px]">
-                            <p className="font-dmSans font-normal text-[12px] text-[#fff] leading-[10px] py-[5px] px-[9px] bg-[#3661FC] rounded-full">New</p>
-                            <div className="">
-                                <h6 className="font-dmSans font-normal text-[14px] text-[#6B6161] leading-[14px] text-end">Reviews (18)</h6>
-                                <div className="flex items-center">
-                                    <FaStar className='mr-[4px] text-[#FCC013]' />
-                                    <FaStar className='mr-[4px] text-[#FCC013]' />
-                                    <FaStar className='mr-[4px] text-[#FCC013]' />
-                                    <FaStar className='mr-[4px] text-[#FCC013]' />
-                                    <FaStar className='text-[#FCC013]' />
-                                </div>
+                        <Link to='/shop-details'>
+                            <img src={image} alt="" className="mx-auto" />
+
+                            <div className="mt-[30px]">
+                                <h5 to='/shop-details' className="font-dmSans font-medium text-[16px] text-main leading-[26px] group-hover:text-[#3661FC]">Apple iPhone 14 Pro Max 128 GB Deep Purple (eSIM)</h5>
+                                <p className="font-dmSans font-medium text-[20px] text-main pt-[12px] pb-[25px]">$2000</p>
                             </div>
-                        </div>
-                        <img src={image} alt="" className="mx-auto" />
-                        <div className="mt-[30px]">
-                            <Link className="font-dmSans font-medium text-[16px] text-main leading-[26px] group-hover:text-[#3661FC]">Apple iPhone 14 Pro Max 128 GB Deep Purple (eSIM)</Link>
-                            <p className="font-dmSans font-medium text-[20px] text-main pt-[12px] pb-[25px]">$2000</p>
+                        </Link>
+                        <Link to='/2'>
                             <button
                                 className="flex items-center py-[12px] bg-[#fff] w-full rounded-full justify-center font-pop font-medium text-[18px] text-[#6B6161] leading-[26px] group-hover:text-[#3661FC]">
                                 <IoBagHandleOutline className="w-[16px] h-[17.45px] mr-[10px]" />
                                 Add to Cart
                             </button>
-                        </div>
+                        </Link>
                     </div>
                     <div className="bg-[#F4F4FF] p-[30px] rounded-2xl group">
                         <div className="flex items-center justify-between pb-[30px]">
