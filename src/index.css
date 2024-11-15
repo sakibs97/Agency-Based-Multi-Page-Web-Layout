@@ -6,7 +6,6 @@
     border-right: 10px #FE651B solid !important;
 }
 
-
 @media (min-width: 1024px) {
     .menu-bar::after{
         position: absolute;
@@ -26,6 +25,5 @@
     }    
 }
 
-  
 
 

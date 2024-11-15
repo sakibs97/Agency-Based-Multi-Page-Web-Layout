@@ -10,18 +10,17 @@ const ClientTopReview = () => {
         dots: true,
         infinite: true,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplaySpeed: 5000,
         appendDots: dots => (
-            <div
+            <div id='sakibg-ttt'
                 style={{
                     position: "absolute",
                     left: "50%",
                     bottom: "-10%",
-                    transform: "translateX(-50%)"
-
+                    transform: "translateX(-50%)",
                 }}
             >
                 <ul style={{ margin: "0px" }}> {dots} </ul>
