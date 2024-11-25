@@ -1,5 +1,6 @@
 import DetailsBanner from "../components/shop/DetailsBanner"
 import ProductInfo from "../components/shop/ProductInfo"
+import RelatedProduct from "../components/shop/RelatedProduct"
 
 
 const ShopDetails = () => {
@@ -7,6 +8,7 @@ const ShopDetails = () => {
         <>
             <DetailsBanner />
             <ProductInfo />
+            <RelatedProduct />
         </>
     )
 }

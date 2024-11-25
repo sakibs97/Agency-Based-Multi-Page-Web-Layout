@@ -15,6 +15,8 @@ import Frequently from './page/Frequently';
 import Testimonial from './page/Testimonial';
 import Shop from './page/Shop';
 import ShopDetails from './page/ShopDetails';
+import Cart from './page/Cart';
+import Checkout from './page/Checkout';
 
 let router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -32,6 +34,8 @@ let router = createBrowserRouter(createRoutesFromElements(
       <Route path='/testimonial' element={<Testimonial />}></Route>
       <Route path='/shop' element={<Shop />}></Route>
       <Route path='/shop-details' element={<ShopDetails />}></Route>
+      <Route path='/cart' element={<Cart />}></Route>
+      <Route path='/checkout' element={<Checkout />}></Route>
       <Route path='*' element={<ErrorPage />}></Route>
     </Route>
   </>

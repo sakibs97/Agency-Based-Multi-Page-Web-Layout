@@ -9,7 +9,7 @@ import { FaStar, FaRegHeart, FaFacebookF, FaPinterest, FaTwitter } from "react-i
 import { IoBagHandleOutline, IoFlagSharp } from "react-icons/io5";
 import { TfiReload } from "react-icons/tfi";
 import { useState } from "react";
-import { act } from "react";
+import { Link } from "react-router-dom";
 
 const ProductInfo = () => {
     const settings = {
@@ -40,25 +40,25 @@ const ProductInfo = () => {
             id: 1,
             name: 'Abubokkor Siddik',
             date: 'Jan 14, 2022',
-            discription: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsium has been the industry&apos;s standards dummy',
+            description: 'Simply dummy text of the printing and typesetting industry. Lorem Ipsium has been the industry&apos;s standards dummy',
         },
         {
             id: 2,
             name: 'Aliyarbay',
             date: 'Nov 16, 2022',
-            discription: 'Very nice product. Nice picture quality. And gps is great',
+            description: 'Very nice product. Nice picture quality. And gps is great',
         },
         {
             id: 3,
             name: 'Aliyarbay',
             date: 'Sep 16, 2023',
-            discription: 'I have this camera from the beginning of summer and I feel happy with it .Maybe the bundles is need to be price oriented,but everything is OK.',
+            description: 'I have this camera from the beginning of summer and I feel happy with it .Maybe the bundles is need to be price oriented,but everything is OK.',
         },
         {
             id: 4,
             name: 'Aliyarbay',
             date: 'Oct 19, 2024',
-            discription: 'Real authentic genuine quality however it fit me like an XL size when In fact Im L. Beware',
+            description: 'Real authentic genuine quality however it fit me like an XL size when In fact Im L. Beware',
         },
     ];
 
@@ -116,10 +116,12 @@ const ProductInfo = () => {
                                     <button className="px-4 py-2 text-ptag hover:text-main">+</button>
                                 </div>
                             </div>
-                            <button className="py-[12px] bg-gradient-to-r from-startC to-endC rounded-full w-[370px] ml-[30px] flex items-center justify-center font-dmSans font-medium text-[18px] leading-[18px] text-[#fff]">
-                                <IoBagHandleOutline className="w-[16px] h-[17.45px] mr-[10px]" />
-                                <span>Add to Cart</span>
-                            </button>
+                            <Link to='/cart'>
+                                <button className="py-[12px] bg-gradient-to-r from-startC to-endC rounded-full w-[370px] ml-[30px] flex items-center justify-center font-dmSans font-medium text-[18px] leading-[18px] text-[#fff]">
+                                    <IoBagHandleOutline className="w-[16px] h-[17.45px] mr-[10px]" />
+                                    <span>Add to Cart</span>
+                                </button>
+                            </Link>
                         </div>
                         <div className="flex items-center pt-[27px] pb-[22px] border-b-[2px] border-[#E5EBEF]">
                             <button className="flex items-center">
@@ -259,7 +261,7 @@ const ProductInfo = () => {
                                                 </div>
                                             </div>
                                             <p className="font-dmSans font-normal text-[16px] text-ptag leading-[24px] pt-[18px]">
-                                                {item.discription}
+                                                {item.description}
                                             </p>
                                         </div>
                                     </div>
