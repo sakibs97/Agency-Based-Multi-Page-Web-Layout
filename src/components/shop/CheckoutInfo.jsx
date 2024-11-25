@@ -1,6 +1,10 @@
+import { useState } from "react"
 
 
 const CheckoutInfo = () => {
+
+    let [activeTab, setActiveTab] = useState('Bank')
+
     return (
         <section className="my-28">
             <div className="container">
@@ -10,7 +14,7 @@ const CheckoutInfo = () => {
                     <span className="text-[#3661FC] pl-[5px]">Click here to enter your code</span>
                 </div>
                 <div className="mt-20 flex items-start justify-between">
-                    <div className="w-[60%] p-[60px] bg-[#F4F4FF] rounded-3xl">
+                    <div className="w-[55%] p-[60px] bg-[#F4F4FF] rounded-3xl">
                         <h3 className="font-nuni font-bold text-[26px] text-main leading-[24px] pb-[40px]">Billing Details</h3>
                         <div className="grid grid-cols-2 gap-[20px]">
                             <input type="text" placeholder="First Name*" className="py-[17px] px-[25px] rounded-full font-dmSans font-normal text-[13px] leading-[24px]" />
@@ -53,7 +57,132 @@ const CheckoutInfo = () => {
                         </div>
 
                     </div>
-                    <div className="w-[28%]"></div>
+                    <div className="w-[38%]">
+                        <h3 className="font-nuni font-bold text-[26px] text-main leading-[26px] pb-[35px]">Order Summary</h3>
+                        <div className="border py-[30px] px-[40px] rounded-lg">
+                            <div className="flex justify-between items-center pb-[25px]">
+                                <h5 className="font-nuni font-semibold text-[20px] text-main leading-[24px]">Product</h5>
+                                <h5 className="font-nuni font-semibold text-[20px] text-main leading-[24px]">Total</h5>
+                            </div>
+                            <div className="border-y py-[15px] font-dmSans font-normal text-ptag leading-[26px]">
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Orca is an armchair</p>
+                                    <span className="text-[16px]">$120</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Venot Spanish Organic wood</p>
+                                    <span className="text-[16px]">$280</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Eichholtz Sofa Emilio</p>
+                                    <span className="text-[16px]">$160</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Envole Double Pendant Light</p>
+                                    <span className="text-[16px]">$110</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between items-center py-[15px] ">
+                                <h5 className="font-nuni font-semibold text-[20px] text-main leading-[24px]">Subtotal</h5>
+                                <h5 className="font-nuni font-semibold text-[20px] text-main leading-[24px]">$670.00</h5>
+                            </div>
+                            <div className="font-dmSans font-normal text-ptag leading-[26px] pb-[8px]">
+                                <p className="text-[13px]">Shipping</p>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Free Shipping</p>
+                                    <span className="text-[16px]">+$00.00</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Flat Rate</p>
+                                    <span className="text-[16px]">+$10.00</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-[13px]">Local Delivery</p>
+                                    <span className="text-[16px]">+$20.00</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between items-center py-[15px] border-t">
+                                <h5 className="font-nuni font-semibold text-[20px] text-main leading-[24px]">Total</h5>
+                                <h5 className="font-nuni font-semibold text-[20px] text-[#3661FC] leading-[24px]">$700.00</h5>
+                            </div>
+                            <div className="">
+                                <div id="default-tab" role="tablist">
+                                    <div className={`${activeTab === 'Bank' ? 'bg-[#F4F4FF] py-[20px] px-[17px] rounded-3xl' : ''}`}>
+                                        <div
+                                            className={`flex items-baseline font-dmSans text-[16px] leading-[26px] ${activeTab === 'Bank' ? 'font-medium text-main' : 'font-normal text-ptag pl-[15px]'}`}
+                                            id="Bank"
+                                            onClick={() => setActiveTab('Bank')}
+                                            role="tab"
+                                            aria-controls="Bank"
+                                            aria-selected={activeTab === 'Bank'}
+                                        >
+                                            <input type="radio"
+                                                name="paymentMethod"
+                                                value="Bank"
+                                                checked={activeTab === 'Bank'}
+                                                onChange={() => setActiveTab('Bank')}
+                                            />
+                                            <div className="pl-[10px]">
+                                                <h6 className="">Direct Bank Transfer</h6>
+                                                <p className={`font-dmSans text-[16px] leading-[26px] text-ptag ${activeTab === 'Bank' ? 'block' : 'hidden'}`}>
+                                                    Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={`${activeTab === 'Cash' ? 'bg-[#F4F4FF] py-[20px] px-[17px] rounded-3xl' : ''}`}>
+                                        <div
+                                            className={`flex items-baseline font-dmSans text-[16px] leading-[26px] ${activeTab === 'Cash' ? 'font-medium text-main' : 'font-normal text-ptag pl-[15px]'}`}
+                                            id="Cash"
+                                            onClick={() => setActiveTab('Cash')}
+                                            role="tab"
+                                            aria-controls="Cash"
+                                            aria-selected={activeTab === 'Cash'}
+                                        >
+                                            <input type="radio"
+                                                name="paymentMethod"
+                                                value="Cash"
+                                                checked={activeTab === 'Cash'}
+                                                onChange={() => setActiveTab('Cash')}
+                                            />
+                                            <div className="pl-[10px]">
+                                                <h6 className="">Cash on Delivery</h6>
+                                                <p className={`font-dmSans text-[16px] leading-[26px] text-ptag ${activeTab === 'Cash' ? 'block' : 'hidden'}`}>
+                                                    Make your payment directly Cash on hand. Please use your Order ID as the payment reference.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={`${activeTab === 'Cards' ? 'bg-[#F4F4FF] py-[20px] px-[17px] rounded-3xl' : ''}`}>
+                                        <div
+                                            className={`flex items-baseline font-dmSans text-[16px] leading-[26px] ${activeTab === 'Cards' ? 'font-medium text-main' : 'font-normal text-ptag pl-[15px]'}`}
+                                            id="Cards"
+                                            onClick={() => setActiveTab('Cards')}
+                                            role="tab"
+                                            aria-controls="Cards"
+                                            aria-selected={activeTab === 'Cards'}
+                                        >
+                                            <input type="radio"
+                                                name="paymentMethod"
+                                                value="Cards"
+                                                checked={activeTab === 'Cards'}
+                                                onChange={() => setActiveTab('Cards')}
+                                            />
+                                            <div className="pl-[10px]">
+                                                <h6 className="">Credit/Debit Cards or Paypal</h6>
+                                                <p className={`font-dmSans text-[16px] leading-[26px] text-ptag ${activeTab === 'Cards' ? 'block' : 'hidden'}`}>
+                                                    Make your payment directly into Credit/Debit Cards or Paypal. Please use your Order ID as the payment reference.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-center pt-[24px]">
+                                <button className="py-[16px] bg-gradient-to-r from-startC to-endC w-full rounded-full font-dmSans font-normal text-[18px] text-white leading-[18px]">Place Order Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
